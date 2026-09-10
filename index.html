@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +15,517 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <style>
+
+        /* ================= HOME PAGE ENHANCEMENTS ================= */
+
+        .home-page {
+            background: #f8fafc;
+        }
+
+        /* HERO */
+
+        .hero-section {
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 70px 8%;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(99,102,241,0.20), transparent 30%),
+                radial-gradient(circle at 10% 90%, rgba(14,165,233,0.15), transparent 30%),
+                linear-gradient(135deg, #eef2ff, #f8fafc 55%, #ecfeff);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 9px 18px;
+            border-radius: 30px;
+            background: white;
+            color: #4f46e5;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(15,23,42,0.08);
+            margin-bottom: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.08;
+            margin: 0 0 22px;
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .hero-content h2 span {
+            color: #4f46e5;
+        }
+
+        .hero-content > p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #475569;
+            max-width: 580px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-button,
+        .secondary-button {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .primary-button {
+            background: #4f46e5;
+            color: white;
+            box-shadow: 0 10px 25px rgba(79,70,229,0.25);
+        }
+
+        .primary-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(79,70,229,0.35);
+        }
+
+        .secondary-button {
+            background: white;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+        }
+
+        .secondary-button:hover {
+            transform: translateY(-3px);
+            border-color: #4f46e5;
+            color: #4f46e5;
+        }
+
+        /* HERO CARD */
+
+        .hero-card {
+            width: 360px;
+            padding: 35px;
+            background: rgba(255,255,255,0.88);
+            border-radius: 28px;
+            box-shadow: 0 25px 60px rgba(15,23,42,0.14);
+            border: 1px solid rgba(255,255,255,0.8);
+            backdrop-filter: blur(12px);
+            animation: floatCard 4s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .hero-card-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero-card h3 {
+            font-size: 28px;
+            margin: 0 0 8px;
+            color: #0f172a;
+        }
+
+        .hero-card > p {
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .hero-card-items {
+            display: grid;
+            gap: 12px;
+        }
+
+        .hero-card-items div {
+            padding: 13px 15px;
+            background: #f8fafc;
+            border-radius: 12px;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        /* CLASS SECTION */
+
+        .classes-section {
+            padding: 75px 8%;
+            background: white;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 40px;
+        }
+
+        .section-heading span {
+            color: #4f46e5;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+            color: #0f172a;
+            margin: 10px 0;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .class-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .class-card {
+            position: relative;
+            padding: 30px 24px;
+            border-radius: 20px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s ease;
+            overflow: hidden;
+        }
+
+        .class-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(15,23,42,0.10);
+            border-color: #c7d2fe;
+        }
+
+        .class-number {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 18px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef2ff;
+            color: #4f46e5;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .class-card h3 {
+            color: #0f172a;
+            margin: 0 0 8px;
+            font-size: 22px;
+        }
+
+        .class-card p {
+            color: #64748b;
+            margin: 0 0 18px;
+            font-size: 14px;
+        }
+
+        .class-link {
+            color: #4f46e5;
+            font-weight: 700;
+        }
+
+        /* FEATURES */
+
+        .features-section {
+            padding: 75px 8%;
+            background: #f8fafc;
+        }
+
+        .feature-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 28px 24px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(15,23,42,0.09);
+        }
+
+        .feature-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #0f172a;
+            margin: 0 0 10px;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .feature-card a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* MOCK TEST BANNER */
+
+        .mock-highlight {
+            margin: 70px auto;
+            max-width: 1100px;
+            padding: 45px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #312e81, #4f46e5);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 25px 50px rgba(49,46,129,0.25);
+        }
+
+        .mock-highlight h2 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        .mock-highlight p {
+            margin: 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .mock-button {
+            background: white;
+            color: #312e81;
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+
+        .mock-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* WHY US */
+
+        .why-section {
+            padding: 75px 8%;
+            background: white;
+        }
+
+        .why-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .why-card .why-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+
+        .about-section {
+            padding: 75px 8%;
+            background: #f8fafc;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content > span {
+            color: #4f46e5;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            color: #0f172a;
+            margin: 12px 0 20px;
+        }
+
+        .about-content p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        /* CONTACT */
+
+        .contact-section {
+            padding: 75px 8%;
+            background: white;
+        }
+
+        .contact-card {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 35px;
+            background: #f8fafc;
+            border-radius: 22px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .contact-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            color: #0f172a;
+        }
+
+        .contact-card p {
+            color: #64748b;
+        }
+
+        .contact-card a {
+            color: #4f46e5;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 55px 6%;
+            }
+
+            .hero-content > p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-card {
+                width: auto;
+                max-width: 400px;
+            }
+
+            .class-grid,
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mock-highlight {
+                margin-left: 6%;
+                margin-right: 6%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero-content h2 {
+                font-size: 42px;
+            }
+
+            .hero-card {
+                padding: 25px;
+            }
+
+            .class-grid,
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading h2,
+            .about-content h2 {
+                font-size: 30px;
+            }
+
+            .mock-highlight {
+                padding: 30px 22px;
+            }
+
+            .mock-highlight h2 {
+                font-size: 27px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
-<body>
+<body class="home-page">
 
 
 <!-- ================= HEADER ================= -->
@@ -47,8 +553,7 @@
 
         <nav class="main-nav">
 
-            <a href="index.html"
-               class="active">
+            <a href="index.html" class="active">
                 Home
             </a>
 
@@ -75,18 +580,17 @@
 </header>
 
 
-
-<!-- ================= HERO ================= -->
-
 <main>
 
+
+<!-- ================= HERO ================= -->
 
 <section class="hero-section">
 
     <div class="hero-content">
 
         <span class="hero-label">
-            WELCOME TO PARIDHI TUTORS
+            🎓 WELCOME TO PARIDHI TUTORS
         </span>
 
         <h2>
@@ -96,27 +600,21 @@
         </h2>
 
         <p>
-            Quality study resources, practice material and
-            online tests to help students prepare with
-            confidence.
+            Your simple and growing learning platform for
+            NCERT resources, CBSE papers, solutions and
+            online practice tests.
         </p>
-
 
         <div class="hero-buttons">
 
             <a href="resources.html"
                class="primary-button">
-
-                Explore Study Resources →
-
+                📚 Explore Study Resources →
             </a>
-
 
             <a href="mock-tests.html"
                class="secondary-button">
-
-                Start Mock Test
-
+                🧪 Start Mock Test
             </a>
 
         </div>
@@ -135,7 +633,7 @@
         </h3>
 
         <p>
-            NCERT • CBSE • Practice • Tests
+            Everything students need in one place.
         </p>
 
         <div class="hero-card-items">
@@ -149,11 +647,11 @@
             </div>
 
             <div>
-                ✅ Solutions
+                ✅ NCERT Solutions
             </div>
 
             <div>
-                🧪 Mock Tests
+                🧪 Online Mock Tests
             </div>
 
         </div>
@@ -162,6 +660,109 @@
 
 </section>
 
+
+<!-- ================= CLASS SELECTION ================= -->
+
+<section class="classes-section">
+
+    <div class="section-heading">
+
+        <span>
+            CHOOSE YOUR CLASS
+        </span>
+
+        <h2>
+            Start Learning Today
+        </h2>
+
+        <p>
+            Select your class and explore study resources,
+            papers, solutions and practice material.
+        </p>
+
+    </div>
+
+
+    <div class="class-grid">
+
+        <a href="class9.html" class="class-card">
+
+            <div class="class-number">
+                09
+            </div>
+
+            <h3>Class 9</h3>
+
+            <p>
+                Foundation &amp; Concept Building
+            </p>
+
+            <span class="class-link">
+                Explore Class 9 →
+            </span>
+
+        </a>
+
+
+        <a href="class10.html" class="class-card">
+
+            <div class="class-number">
+                10
+            </div>
+
+            <h3>Class 10</h3>
+
+            <p>
+                CBSE Board Preparation
+            </p>
+
+            <span class="class-link">
+                Explore Class 10 →
+            </span>
+
+        </a>
+
+
+        <a href="class11.html" class="class-card">
+
+            <div class="class-number">
+                11
+            </div>
+
+            <h3>Class 11</h3>
+
+            <p>
+                Build Strong Concepts
+            </p>
+
+            <span class="class-link">
+                Explore Class 11 →
+            </span>
+
+        </a>
+
+
+        <a href="class12.html" class="class-card">
+
+            <div class="class-number">
+                12
+            </div>
+
+            <h3>Class 12</h3>
+
+            <p>
+                Board Exam Preparation
+            </p>
+
+            <span class="class-link">
+                Explore Class 12 →
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
 
 
 <!-- ================= FEATURES ================= -->
@@ -179,8 +780,8 @@
         </h2>
 
         <p>
-            Access useful study material and practice
-            resources from one place.
+            Useful study resources and practice material
+            collected in one convenient place.
         </p>
 
     </div>
@@ -188,8 +789,6 @@
 
     <div class="feature-grid">
 
-
-        <!-- STUDY RESOURCES -->
 
         <div class="feature-card">
 
@@ -213,9 +812,6 @@
         </div>
 
 
-
-        <!-- PREVIOUS PAPERS -->
-
         <div class="feature-card">
 
             <div class="feature-icon">
@@ -228,7 +824,7 @@
 
             <p>
                 Access CBSE previous year question papers
-                for board exam preparation.
+                for better exam preparation.
             </p>
 
             <a href="resources.html">
@@ -237,9 +833,6 @@
 
         </div>
 
-
-
-        <!-- SOLUTIONS -->
 
         <div class="feature-card">
 
@@ -253,7 +846,7 @@
 
             <p>
                 Find chapter-wise NCERT solutions and
-                solutions to practice questions.
+                useful practice support.
             </p>
 
             <a href="resources.html">
@@ -262,9 +855,6 @@
 
         </div>
 
-
-
-        <!-- MOCK TESTS -->
 
         <div class="feature-card">
 
@@ -277,12 +867,12 @@
             </h3>
 
             <p>
-                Test your preparation with online
-                practice tests and instant results.
+                Test your preparation and receive
+                instant results.
             </p>
 
             <a href="mock-tests.html">
-                Start Mock Test →
+                Start Test →
             </a>
 
         </div>
@@ -292,6 +882,112 @@
 
 </section>
 
+
+<!-- ================= MOCK TEST HIGHLIGHT ================= -->
+
+<section class="mock-highlight">
+
+    <div>
+
+        <h2>
+            🧪 Ready to Test Yourself?
+        </h2>
+
+        <p>
+            Practice questions, check your score and
+            identify areas where you can improve.
+        </p>
+
+    </div>
+
+    <a href="mock-tests.html"
+       class="mock-button">
+        Take a Mock Test →
+    </a>
+
+</section>
+
+
+<!-- ================= WHY PARIDHI TUTORS ================= -->
+
+<section class="why-section">
+
+    <div class="section-heading">
+
+        <span>
+            WHY PARIDHI TUTORS
+        </span>
+
+        <h2>
+            Simple. Useful. Student Friendly.
+        </h2>
+
+        <p>
+            We want to make useful learning resources
+            easier for students to find.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🎯
+            </div>
+
+            <h3>
+                Focused Learning
+            </h3>
+
+            <p>
+                Find resources organized according
+                to classes and subjects.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                📖
+            </div>
+
+            <h3>
+                Practice More
+            </h3>
+
+            <p>
+                Use papers, solutions and mock tests
+                to strengthen your preparation.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🚀
+            </div>
+
+            <h3>
+                Keep Improving
+            </h3>
+
+            <p>
+                Paridhi Tutors will continue to grow
+                with more resources and features.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- ================= ABOUT ================= -->
@@ -317,14 +1013,13 @@
 
         <p>
             Our goal is simple — make learning resources
-            easy to find, easy to understand and easy to
-            practise.
+            easy to find, easy to understand and easy
+            to practise.
         </p>
 
     </div>
 
 </section>
-
 
 
 <!-- ================= CONTACT ================= -->
@@ -374,7 +1069,6 @@
 
 
 </main>
-
 
 
 <!-- ================= FOOTER ================= -->
@@ -437,4 +1131,3 @@
 </body>
 
 </html>
-```

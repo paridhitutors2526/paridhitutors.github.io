@@ -1,476 +1,535 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paridhi Tutors | Quality Education & Personalised Learning</title>
+    <title>Paridhi Tutors | Quality Education & Study Resources</title>
 
     <meta name="description"
-          content="Paridhi Tutors provides personalised tutoring and academic support for students.">
+          content="Paridhi Tutors provides quality education, study resources, NCERT books, CBSE question papers, mock tests and learning support for students.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 
-    <header class="header">
+<header class="site-header">
 
-        <div class="container nav-container">
+    <div class="header-container">
 
-            <!-- LOGO -->
-            <a href="#home" class="logo">
-                <img src="logo.jpg" alt="Paridhi Tutors Logo">
-            </a>
+        <a href="index.html" class="brand">
 
-            <!-- WEBSITE NAME -->
-            <div class="brand-name">
+            <img src="logo.jpg"
+                 alt="Paridhi Tutors Logo"
+                 class="logo">
+
+            <div class="brand-text">
                 <h1>Paridhi Tutors</h1>
-                <p>Learn • Grow • Succeed</p>
+                <p>Learn • Practice • Succeed</p>
             </div>
 
-            <!-- NAVIGATION -->
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#courses">Courses</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        </a>
 
-        </div>
+        <nav class="main-nav">
 
-    </header>
+            <a href="index.html" class="active">Home</a>
 
+            <a href="#about">About</a>
 
-    <!-- ================= HERO SECTION ================= -->
+            <a href="resources.html">Study Resources</a>
 
-    <section id="home" class="hero">
+            <a href="#contact">Contact</a>
 
-        <div class="container hero-content">
+        </nav>
 
-            <div class="hero-text">
+    </div>
 
-                <p class="welcome-text">WELCOME TO</p>
+</header>
 
-                <h2>
-                    Paridhi Tutors
-                </h2>
 
-                <h3>
-                    Quality Education.<br>
-                    Personalised Attention.
-                </h3>
+<!-- ================= HERO ================= -->
 
-                <p class="hero-description">
-                    Helping students understand better, learn confidently
-                    and achieve their academic goals through personalised
-                    guidance and dedicated teaching.
-                </p>
+<section class="hero">
 
-                <div class="hero-buttons">
+    <div class="hero-content">
 
-                    <a href="#courses" class="btn primary-btn">
-                        Explore Courses
-                    </a>
+        <div class="hero-text">
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Us
-                    </a>
+            <span class="hero-label">
+                Welcome to Paridhi Tutors
+            </span>
 
-                </div>
+            <h2>
+                Learn Better.<br>
+                Practice More.<br>
+                <span>Succeed Together.</span>
+            </h2>
 
-            </div>
+            <p>
+                Quality educational support and useful study resources
+                for students from Class 1 to Class 12.
+            </p>
 
+            <div class="hero-buttons">
 
-            <div class="hero-card">
+                <a href="resources.html" class="primary-button">
+                    📚 Explore Study Resources
+                </a>
 
-                <div class="card-icon">🎓</div>
-
-                <h3>Learn With Confidence</h3>
-
-                <p>
-                    Focused learning, individual attention and
-                    continuous guidance for better academic performance.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT SECTION ================= -->
-
-    <section id="about" class="section about-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-label">ABOUT US</p>
-
-                <h2>Learning Made Simple</h2>
-
-                <p>
-                    At Paridhi Tutors, we believe that every student
-                    has the potential to succeed when provided with
-                    the right guidance and learning environment.
-                </p>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-box">
-
-                    <div class="box-icon">📚</div>
-
-                    <h3>Concept Clarity</h3>
-
-                    <p>
-                        We focus on building strong fundamentals
-                        instead of simply memorising answers.
-                    </p>
-
-                </div>
-
-
-                <div class="about-box">
-
-                    <div class="box-icon">👩‍🏫</div>
-
-                    <h3>Personal Attention</h3>
-
-                    <p>
-                        Individual guidance helps identify
-                        learning gaps and improve confidence.
-                    </p>
-
-                </div>
-
-
-                <div class="about-box">
-
-                    <div class="box-icon">📈</div>
-
-                    <h3>Continuous Improvement</h3>
-
-                    <p>
-                        Regular practice and feedback help students
-                        steadily improve their academic performance.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= COURSES SECTION ================= -->
-
-    <section id="courses" class="section courses-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-label">OUR COURSES</p>
-
-                <h2>What We Offer</h2>
-
-                <p>
-                    Academic support designed according to the
-                    learning needs of students.
-                </p>
-
-            </div>
-
-
-            <div class="courses-grid">
-
-                <div class="course-card">
-
-                    <div class="course-icon">📖</div>
-
-                    <h3>School Subjects</h3>
-
-                    <p>
-                        Support for students in understanding
-                        important school subjects and concepts.
-                    </p>
-
-                    <a href="#contact">Enquire Now →</a>
-
-                </div>
-
-
-                <div class="course-card">
-
-                    <div class="course-icon">🔢</div>
-
-                    <h3>Mathematics</h3>
-
-                    <p>
-                        Build confidence in mathematics through
-                        step-by-step explanations and practice.
-                    </p>
-
-                    <a href="#contact">Enquire Now →</a>
-
-                </div>
-
-
-                <div class="course-card">
-
-                    <div class="course-icon">🔬</div>
-
-                    <h3>Science</h3>
-
-                    <p>
-                        Understand scientific concepts through
-                        clear explanations and practical examples.
-                    </p>
-
-                    <a href="#contact">Enquire Now →</a>
-
-                </div>
-
-
-                <div class="course-card">
-
-                    <div class="course-icon">💻</div>
-
-                    <h3>Computer & Technology</h3>
-
-                    <p>
-                        Develop essential computer and technology
-                        skills for today's academic environment.
-                    </p>
-
-                    <a href="#contact">Enquire Now →</a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= WHY US SECTION ================= -->
-
-    <section id="why-us" class="section why-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-label">WHY PARIDHI TUTORS?</p>
-
-                <h2>Why Choose Us?</h2>
-
-            </div>
-
-
-            <div class="why-grid">
-
-                <div class="why-item">
-
-                    <span>✓</span>
-
-                    <div>
-                        <h3>Personalised Learning</h3>
-
-                        <p>
-                            Teaching approach adapted to each
-                            student's learning requirements.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <span>✓</span>
-
-                    <div>
-                        <h3>Strong Fundamentals</h3>
-
-                        <p>
-                            We concentrate on understanding concepts
-                            and developing a strong academic foundation.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <span>✓</span>
-
-                    <div>
-                        <h3>Regular Practice</h3>
-
-                        <p>
-                            Practice and revision help students
-                            retain concepts and improve performance.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <span>✓</span>
-
-                    <div>
-                        <h3>Student Confidence</h3>
-
-                        <p>
-                            Our objective is to help students become
-                            confident and independent learners.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT SECTION ================= -->
-
-    <section id="contact" class="section contact-section">
-
-        <div class="container contact-container">
-
-            <div class="contact-info">
-
-                <p class="section-label">GET IN TOUCH</p>
-
-                <h2>Let's Help Your Child Learn Better</h2>
-
-                <p>
-                    Have a question about our courses or tutoring
-                    programmes? Get in touch with us.
-                </p>
-
-                <div class="contact-details">
-
-                    <div class="contact-detail">
-
-                        <span>📧</span>
-
-                        <div>
-                            <strong>Email</strong>
-                            <p>
-                                paridhitutors@gmail.com
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span>📍</span>
-
-                        <div>
-                            <strong>Location</strong>
-                            <p>
-                                Online & Local Tutoring
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <h3>Enquiry</h3>
-
-                <p>
-                    Click below to send us an email.
-                </p>
-
-                <a
-                    href="mailto:paridhitutors@gmail.com?subject=Enquiry%20for%20Paridhi%20Tutors"
-                    class="btn primary-btn contact-btn">
-                    Send Enquiry
+                <a href="#contact" class="secondary-button">
+                    Contact Us
                 </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <div class="hero-card">
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <div class="footer-brand">
-
-                <img src="logo.jpg" alt="Paridhi Tutors Logo">
-
-                <div>
-
-                    <h3>Paridhi Tutors</h3>
-
-                    <p>
-                        Learn • Grow • Succeed
-                    </p>
-
-                </div>
-
+            <div class="hero-card-icon">
+                🎓
             </div>
 
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#courses">Courses</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#contact">Contact</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
+            <h3>
+                Your Learning Journey
+            </h3>
 
             <p>
-                © 2026 Paridhi Tutors. All Rights Reserved.
+                Study • Practice • Revise • Test • Improve
             </p>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK RESOURCES ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span>STUDY SUPPORT</span>
+
+        <h2>
+            Everything You Need to Learn
+        </h2>
+
+        <p>
+            Explore useful educational resources for your studies.
+        </p>
+
+    </div>
+
+
+    <div class="resource-grid">
+
+
+        <!-- NCERT -->
+
+        <div class="resource-card">
+
+            <div class="resource-icon">
+                📖
+            </div>
+
+            <h3>
+                NCERT Books
+            </h3>
+
+            <p>
+                Access official NCERT textbooks for Classes 1 to 12.
+            </p>
+
+            <a href="https://ncert.nic.in/textbook.php"
+               target="_blank"
+               rel="noopener noreferrer">
+                View NCERT Books →
+            </a>
+
+        </div>
+
+
+        <!-- QUESTION PAPERS -->
+
+        <div class="resource-card">
+
+            <div class="resource-icon">
+                📝
+            </div>
+
+            <h3>
+                Previous Year Papers
+            </h3>
+
+            <p>
+                Practice CBSE previous year examination question papers.
+            </p>
+
+            <a href="https://www.cbse.gov.in/cbsenew/question-paper.html"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Question Papers →
+            </a>
+
+        </div>
+
+
+        <!-- SAMPLE PAPERS -->
+
+        <div class="resource-card">
+
+            <div class="resource-icon">
+                📑
+            </div>
+
+            <h3>
+                Sample Papers
+            </h3>
+
+            <p>
+                Practice CBSE Sample Question Papers and marking schemes.
+            </p>
+
+            <a href="https://cbseacademic.nic.in/sqp_archive.html"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Sample Papers →
+            </a>
+
+        </div>
+
+
+        <!-- MOCK TESTS -->
+
+        <div class="resource-card">
+
+            <div class="resource-icon">
+                🧪
+            </div>
+
+            <h3>
+                Mock Tests
+            </h3>
+
+            <p>
+                Test your preparation with practice and mock examinations.
+            </p>
+
+            <a href="resources.html#mock-tests">
+                Explore Mock Tests →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CLASS SECTION ================= -->
+
+<section class="class-section">
+
+    <div class="section-heading">
+
+        <span>CLASS-WISE</span>
+
+        <h2>
+            Choose Your Class
+        </h2>
+
+        <p>
+            Select your class to explore available learning resources.
+        </p>
+
+    </div>
+
+
+    <div class="class-grid">
+
+        <a href="resources.html#class1">
+            Class 1
+        </a>
+
+        <a href="resources.html#class2">
+            Class 2
+        </a>
+
+        <a href="resources.html#class3">
+            Class 3
+        </a>
+
+        <a href="resources.html#class4">
+            Class 4
+        </a>
+
+        <a href="resources.html#class5">
+            Class 5
+        </a>
+
+        <a href="resources.html#class6">
+            Class 6
+        </a>
+
+        <a href="resources.html#class7">
+            Class 7
+        </a>
+
+        <a href="resources.html#class8">
+            Class 8
+        </a>
+
+        <a href="resources.html#class9">
+            Class 9
+        </a>
+
+        <a href="resources.html#class10">
+            Class 10
+        </a>
+
+        <a href="resources.html#class11">
+            Class 11
+        </a>
+
+        <a href="resources.html#class12">
+            Class 12
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY PARIDHI ================= -->
+
+<section id="about" class="section about-section">
+
+    <div class="section-heading">
+
+        <span>ABOUT US</span>
+
+        <h2>
+            Why Paridhi Tutors?
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                🎯
+            </div>
+
+            <h3>
+                Focused Learning
+            </h3>
+
+            <p>
+                Simple and structured learning support designed
+                to help students understand concepts clearly.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                📚
+            </div>
+
+            <h3>
+                Useful Resources
+            </h3>
+
+            <p>
+                Access books, question papers, sample papers,
+                practice material and other educational resources.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                🚀
+            </div>
+
+            <h3>
+                Continuous Improvement
+            </h3>
+
+            <p>
+                We aim to continuously add new resources,
+                practice tests and learning tools.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>
+            Ready to Start Learning?
+        </h2>
+
+        <p>
+            Explore our study resources and start preparing today.
+        </p>
+
+        <a href="resources.html" class="primary-button">
+            Explore Resources
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-heading">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>
+            Contact Paridhi Tutors
+        </h2>
+
+        <p>
+            Have a question or suggestion? We'd love to hear from you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                📧
+            </div>
+
+            <div>
+
+                <h3>
+                    Email
+                </h3>
+
+                <a href="mailto:paridhitutors@gmail.com">
+                    paridhitutors@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                📚
+            </div>
+
+            <div>
+
+                <h3>
+                    Study Resources
+                </h3>
+
+                <a href="resources.html">
+                    Explore Resources
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                Paridhi Tutors
+            </h3>
+
+            <p>
+                Learn • Practice • Succeed
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="resources.html">
+                Study Resources
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Paridhi Tutors. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
 
 
 </body>
 </html>
+```

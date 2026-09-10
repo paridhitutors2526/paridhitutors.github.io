@@ -1,0 +1,744 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mock Tests | Paridhi Tutors</title>
+
+    <meta name="description"
+          content="Online mock tests and practice tests for students at Paridhi Tutors.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="brand">
+
+            <img src="logo.jpg"
+                 alt="Paridhi Tutors Logo"
+                 class="logo">
+
+            <div class="brand-text">
+
+                <h1>Paridhi Tutors</h1>
+
+                <p>Learn • Practice • Succeed</p>
+
+            </div>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="resources.html">
+                Study Resources
+            </a>
+
+            <a href="mock-tests.html"
+               class="active">
+                Mock Tests
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="mock-container">
+
+
+    <section class="resources-intro">
+
+        <h2>🧪 Online Mock Tests</h2>
+
+        <p>
+            Practice questions, test your preparation and
+            check your score instantly.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= TEST SELECTION ================= -->
+
+    <section class="test-selection">
+
+        <h2>Select a Mock Test</h2>
+
+
+        <div class="test-card">
+
+            <div class="test-icon">
+                📐
+            </div>
+
+            <h3>
+                Class 10 Mathematics
+            </h3>
+
+            <p>
+                CBSE-style practice test
+            </p>
+
+            <p class="test-info">
+                10 Questions • Multiple Choice
+            </p>
+
+            <button
+                onclick="startTest()"
+                class="primary-button">
+
+                Start Test
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= QUIZ ================= -->
+
+    <section id="quiz-section"
+             class="quiz-section"
+             style="display:none;">
+
+        <div class="quiz-header">
+
+            <h2>
+                Class 10 Mathematics
+            </h2>
+
+            <p>
+                Choose the correct answer for each question.
+            </p>
+
+        </div>
+
+
+        <form id="quiz-form">
+
+
+            <!-- QUESTION 1 -->
+
+            <div class="question-card">
+
+                <h3>
+                    1. What is the value of 5²?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q1"
+                           value="0">
+                    10
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q1"
+                           value="1">
+                    25
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q1"
+                           value="0">
+                    15
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q1"
+                           value="0">
+                    20
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 2 -->
+
+            <div class="question-card">
+
+                <h3>
+                    2. What is the HCF of 12 and 18?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q2"
+                           value="0">
+                    2
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q2"
+                           value="0">
+                    3
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q2"
+                           value="1">
+                    6
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q2"
+                           value="0">
+                    9
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 3 -->
+
+            <div class="question-card">
+
+                <h3>
+                    3. What is the value of √81?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q3"
+                           value="1">
+                    9
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q3"
+                           value="0">
+                    8
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q3"
+                           value="0">
+                    7
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q3"
+                           value="0">
+                    6
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 4 -->
+
+            <div class="question-card">
+
+                <h3>
+                    4. What is the sum of angles in a triangle?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q4"
+                           value="0">
+                    90°
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q4"
+                           value="1">
+                    180°
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q4"
+                           value="0">
+                    270°
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q4"
+                           value="0">
+                    360°
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 5 -->
+
+            <div class="question-card">
+
+                <h3>
+                    5. What is 20% of 100?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q5"
+                           value="1">
+                    20
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q5"
+                           value="0">
+                    10
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q5"
+                           value="0">
+                    25
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q5"
+                           value="0">
+                    50
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 6 -->
+
+            <div class="question-card">
+
+                <h3>
+                    6. If x = 5, what is 2x + 3?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q6"
+                           value="0">
+                    10
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q6"
+                           value="1">
+                    13
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q6"
+                           value="0">
+                    15
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q6"
+                           value="0">
+                    8
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 7 -->
+
+            <div class="question-card">
+
+                <h3>
+                    7. What is the area of a square
+                    having side 5 cm?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q7"
+                           value="0">
+                    10 cm²
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q7"
+                           value="1">
+                    25 cm²
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q7"
+                           value="0">
+                    20 cm²
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q7"
+                           value="0">
+                    15 cm²
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 8 -->
+
+            <div class="question-card">
+
+                <h3>
+                    8. What is the value of 3 × 4 + 2?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q8"
+                           value="1">
+                    14
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q8"
+                           value="0">
+                    18
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q8"
+                           value="0">
+                    20
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q8"
+                           value="0">
+                    10
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 9 -->
+
+            <div class="question-card">
+
+                <h3>
+                    9. The probability of getting a head
+                    when tossing a fair coin is:
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q9"
+                           value="1">
+                    1/2
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q9"
+                           value="0">
+                    1
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q9"
+                           value="0">
+                    1/3
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q9"
+                           value="0">
+                    0
+                </label>
+
+            </div>
+
+
+
+            <!-- QUESTION 10 -->
+
+            <div class="question-card">
+
+                <h3>
+                    10. What is the value of 10 × 10?
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="q10"
+                           value="1">
+                    100
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q10"
+                           value="0">
+                    10
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q10"
+                           value="0">
+                    50
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="q10"
+                           value="0">
+                    1000
+                </label>
+
+            </div>
+
+
+
+            <button
+                type="button"
+                onclick="submitTest()"
+                class="primary-button submit-button">
+
+                Submit Test
+
+            </button>
+
+
+        </form>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <div id="result"
+             class="result-box"
+             style="display:none;">
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                Paridhi Tutors
+            </h3>
+
+            <p>
+                Learn • Practice • Succeed
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="resources.html">
+                Study Resources
+            </a>
+
+            <a href="mock-tests.html">
+                Mock Tests
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Paridhi Tutors. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function startTest() {
+
+    document.querySelector(".test-selection").style.display = "none";
+
+    document.getElementById("quiz-section").style.display = "block";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+function submitTest() {
+
+    let score = 0;
+
+    const totalQuestions = 10;
+
+
+    for (let i = 1; i <= totalQuestions; i++) {
+
+        const answer =
+            document.querySelector(
+                'input[name="q' + i + '"]:checked'
+            );
+
+        if (answer && answer.value === "1") {
+
+            score++;
+
+        }
+
+    }
+
+
+    const percentage =
+        (score / totalQuestions) * 100;
+
+
+    let message = "";
+
+
+    if (percentage >= 80) {
+
+        message = "Excellent work! 🎉";
+
+    }
+
+    else if (percentage >= 60) {
+
+        message = "Good job! Keep practising. 👍";
+
+    }
+
+    else {
+
+        message = "Keep practising and try again. 💪";
+
+    }
+
+
+    const result =
+        document.getElementById("result");
+
+
+    result.innerHTML = `
+
+        <h2>🎯 Your Result</h2>
+
+        <p class="score">
+            ${score} / ${totalQuestions}
+        </p>
+
+        <p class="percentage">
+            ${percentage}%
+        </p>
+
+        <p>
+            ${message}
+        </p>
+
+        <button
+            onclick="location.reload()"
+            class="primary-button">
+
+            Try Again
+
+        </button>
+
+    `;
+
+
+    result.style.display = "block";
+
+
+    result.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```

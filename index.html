@@ -1,1612 +1,2235 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NEET & JEE Preparation Hub | Paridhi Tutors</title>
+<title>Paridhi Tutors | Classes 1–12 | NCERT | PYQ | Mock Tests | NEET & JEE</title>
 
 <meta name="description"
-content="Paridhi Tutors - Free NEET UG, JEE Main and JEE Advanced previous year papers, answer keys, study material and video lectures.">
+content="Paridhi Tutors - Free educational resources for Classes 1 to 12, NCERT Books, Previous Year Question Papers, Solutions, Mock Tests, NEET UG, JEE Main, JEE Advanced and video lectures.">
+
+<meta name="keywords"
+content="Paridhi Tutors, NCERT Books, Class 1 to 12, CBSE, PYQ, Previous Year Questions, Solutions, Mock Tests, NEET, JEE Main, JEE Advanced">
 
 <link rel="icon" href="logo.jpg">
 
 <style>
 
-/* ==============================
-   RESET
-============================== */
+/* =========================
+   BASIC SETTINGS
+========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fc;
+    color: #172033;
+    line-height: 1.6;
 }
 
-body{
-    font-family:"Segoe UI",Arial,sans-serif;
-    background:#f5f7fc;
-    color:#172033;
-    line-height:1.6;
+a {
+    text-decoration: none;
 }
 
-/* ==============================
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
    NAVBAR
-============================== */
+========================= */
 
-.navbar{
-    position:sticky;
-    top:0;
-    z-index:9999;
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 
-    background:linear-gradient(135deg,#101936,#253d82);
+    background: linear-gradient(135deg, #101c3d, #263c8f);
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    padding: 12px 4%;
 
-    padding:10px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    box-shadow:0 4px 20px rgba(0,0,0,.18);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
 }
 
-.brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    color:white;
-    text-decoration:none;
-    font-size:21px;
-    font-weight:800;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.brand img{
-    width:48px;
-    height:48px;
-    object-fit:contain;
-    background:white;
-    border-radius:10px;
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 3px;
 }
 
-.nav-links{
-    display:flex;
-    gap:25px;
+.nav-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
+.nav-links a {
+    color: white;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-.nav-links a:hover{
-    color:#ffd84d;
+.nav-links a:hover {
+    background: rgba(255,255,255,0.18);
 }
 
-/* ==============================
+/* =========================
    HERO
-============================== */
+========================= */
 
-.hero{
-    min-height:500px;
+.hero {
+    min-height: 560px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    color:white;
-
-    padding:80px 20px;
-
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 
     background:
-    radial-gradient(circle at 15% 20%,rgba(255,255,255,.15),transparent 25%),
-    radial-gradient(circle at 85% 80%,rgba(255,255,255,.13),transparent 25%),
-    linear-gradient(135deg,#101b45,#29428b,#5b2186);
+        radial-gradient(circle at top right, rgba(108,99,255,0.45), transparent 35%),
+        linear-gradient(135deg, #101a3b, #293b92 55%, #512da8);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
 }
 
-.hero-content{
-    max-width:900px;
-    position:relative;
-    z-index:2;
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
 }
 
-.badge{
-    display:inline-block;
+.badge {
+    display: inline-block;
 
-    padding:8px 18px;
+    background: rgba(255,255,255,0.13);
 
-    border:1px solid rgba(255,255,255,.35);
-    background:rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,0.25);
 
-    border-radius:50px;
+    padding: 9px 18px;
 
-    margin-bottom:20px;
+    border-radius: 30px;
 
-    font-weight:700;
+    font-size: 14px;
+
+    margin-bottom: 20px;
 }
 
-.hero h1{
-    font-size:clamp(40px,7vw,70px);
-    line-height:1.05;
-    margin-bottom:20px;
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 20px;
 }
 
-.hero h1 span{
-    color:#ffd84d;
+.hero h1 span {
+    color: #ffd84d;
 }
 
-.hero p{
-    font-size:19px;
-    max-width:750px;
-    margin:auto;
-    opacity:.94;
+.hero p {
+    font-size: 19px;
+    max-width: 760px;
+    margin: auto;
+    opacity: 0.95;
 }
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:14px;
-    margin-top:30px;
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
 }
 
-.btn{
-    text-decoration:none;
-    padding:13px 24px;
-    border-radius:12px;
-    font-weight:800;
-    transition:.3s;
+.btn {
+    display: inline-block;
+
+    padding: 13px 23px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    cursor: pointer;
 }
 
-.btn-primary{
-    background:#ffd84d;
-    color:#17234c;
+.btn-primary {
+    background: #ffd84d;
+    color: #172033;
 }
 
-.btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-.btn-outline{
-    border:1px solid white;
-    color:white;
+.btn-outline {
+    color: white;
+    border: 2px solid white;
 }
 
-.btn-outline:hover{
-    background:white;
-    color:#17234c;
+.btn-outline:hover {
+    background: white;
+    color: #172033;
 }
 
-/* Sparkles */
+/* =========================
+   SPARKLES
+========================= */
 
-.sparkle{
-    position:absolute;
-    color:#ffe45c;
-    font-size:28px;
+.sparkle {
+    position: absolute;
+    color: #ffd84d;
 
-    animation:sparkle 2.5s infinite ease-in-out;
+    font-size: 30px;
+
+    animation: sparkle 2.5s infinite ease-in-out;
 }
 
-.s1{top:15%;left:10%;}
-.s2{top:25%;right:15%;animation-delay:.5s;}
-.s3{bottom:20%;left:20%;animation-delay:1s;}
-.s4{bottom:15%;right:10%;animation-delay:1.5s;}
+.s1 {
+    top: 15%;
+    left: 10%;
+}
 
-@keyframes sparkle{
+.s2 {
+    top: 25%;
+    right: 12%;
+    animation-delay: 0.5s;
+}
 
-    0%,100%{
-        opacity:.2;
-        transform:scale(.7) rotate(0deg);
+.s3 {
+    bottom: 20%;
+    left: 18%;
+    animation-delay: 1s;
+}
+
+.s4 {
+    bottom: 15%;
+    right: 20%;
+    animation-delay: 1.5s;
+}
+
+@keyframes sparkle {
+
+    0%,100% {
+        opacity: 0.3;
+        transform: scale(0.7) rotate(0deg);
     }
 
-    50%{
-        opacity:1;
-        transform:scale(1.3) rotate(25deg);
+    50% {
+        opacity: 1;
+        transform: scale(1.3) rotate(180deg);
     }
 }
 
-/* ==============================
+/* =========================
    SEARCH
-============================== */
+========================= */
 
-.search-box{
-    max-width:850px;
-    margin:-30px auto 45px;
+.search-area {
+    margin-top: -30px;
 
-    position:relative;
-    z-index:10;
-
-    padding:0 20px;
+    position: relative;
+    z-index: 10;
 }
 
-.search-box input{
-    width:100%;
+.search-box {
+    background: white;
 
-    border:0;
-    outline:none;
+    max-width: 700px;
 
-    padding:18px 22px;
+    margin: auto;
 
-    border-radius:17px;
+    padding: 12px;
 
-    font-size:16px;
+    border-radius: 40px;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.15);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+
+    display: flex;
 }
 
-/* ==============================
-   CONTAINER
-============================== */
+.search-box input {
+    flex: 1;
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 20px 70px;
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    padding: 10px 18px;
+
+    background: transparent;
 }
 
-.section-title{
-    text-align:center;
-    margin:50px 0 30px;
+.search-box button {
+    border: none;
+
+    background: #263c8f;
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
 }
 
-.section-title h2{
-    font-size:34px;
-    color:#17275a;
+/* =========================
+   SECTION
+========================= */
+
+section {
+    padding: 70px 0;
 }
 
-.section-title p{
-    color:#667085;
+.section-title {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
 }
 
-/* ==============================
+.section-title span {
+    color: #3949ab;
+}
+
+.section-subtitle {
+    text-align: center;
+
+    color: #687086;
+
+    max-width: 720px;
+
+    margin: 0 auto 35px;
+}
+
+/* =========================
+   CLASS CARDS
+========================= */
+
+.class-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.class-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(20,30,70,0.08);
+
+    border: 1px solid #edf0f7;
+
+    transition: 0.3s;
+}
+
+.class-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(20,30,70,0.14);
+}
+
+.class-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.class-card h3 {
+    margin-bottom: 7px;
+}
+
+.class-card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.small-btn {
+    display: inline-block;
+
+    background: #eef1ff;
+
+    color: #283593;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   RESOURCE CARDS
+========================= */
+
+.resource-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.resource-card {
+    background: white;
+
+    padding: 28px 20px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(20,30,70,0.08);
+
+    transition: 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-6px);
+}
+
+.resource-icon {
+    font-size: 45px;
+
+    margin-bottom: 12px;
+}
+
+.resource-card h3 {
+    margin-bottom: 8px;
+}
+
+.resource-card p {
+    font-size: 14px;
+
+    color: #6b7280;
+
+    margin-bottom: 18px;
+}
+
+.resource-btn {
+    display: inline-block;
+
+    padding: 9px 17px;
+
+    border-radius: 22px;
+
+    background: #293b92;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.coming {
+    background: #fff4cc;
+
+    color: #7a5c00;
+}
+
+/* =========================
+   CLASS RESOURCE DETAILS
+========================= */
+
+.class-resources {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.details-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow: 0 5px 20px rgba(20,30,70,0.08);
+}
+
+.details-card h3 {
+    color: #293b92;
+
+    margin-bottom: 15px;
+}
+
+.details-card ul {
+    list-style: none;
+}
+
+.details-card li {
+    margin: 9px 0;
+
+    padding: 8px;
+
+    background: #f5f7ff;
+
+    border-radius: 8px;
+}
+
+.details-card a {
+    color: #283593;
+
+    font-weight: bold;
+}
+
+/* =========================
    EXAM CARDS
-============================== */
+========================= */
 
-.exam-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
+.exam-section {
+    background: linear-gradient(180deg, #eef1ff, #f7f8fc);
 }
 
-.exam-card{
+.exam-grid {
+    display: grid;
 
-    background:white;
+    grid-template-columns: repeat(3, 1fr);
 
-    padding:28px;
-
-    border-radius:22px;
-
-    border:1px solid #e6e9f2;
-
-    box-shadow:0 8px 30px rgba(20,35,70,.09);
-
-    transition:.3s;
-
-    position:relative;
-    overflow:hidden;
+    gap: 25px;
 }
 
-.exam-card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 18px 40px rgba(20,35,70,.16);
+.exam-card {
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    box-shadow: 0 7px 25px rgba(30,40,100,0.1);
+
+    text-align: center;
+
+    transition: 0.3s;
 }
 
-.exam-card::before{
-    content:"";
-
-    position:absolute;
-
-    height:6px;
-
-    top:0;
-    left:0;
-    right:0;
-
-    background:linear-gradient(90deg,#ff4b5c,#ffb347);
+.exam-card:hover {
+    transform: translateY(-7px);
 }
 
-.main-card::before{
-    background:linear-gradient(90deg,#1769ff,#52a2ff);
+.exam-logo {
+    font-size: 50px;
+
+    margin-bottom: 10px;
 }
 
-.advanced-card::before{
-    background:linear-gradient(90deg,#7628e7,#c65cff);
+.exam-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
 }
 
-.exam-icon{
-    font-size:48px;
+.exam-card p {
+    color: #687086;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
 }
 
-.exam-card h3{
-    font-size:26px;
-    color:#182657;
-    margin:7px 0;
+.exam-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
 }
 
-.exam-card p{
-    color:#667085;
+.exam-buttons a {
+    background: #293b92;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
 }
 
-.features{
-    list-style:none;
-    margin:18px 0;
+/* =========================
+   PYQ SECTION
+========================= */
+
+.pyq-box {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    box-shadow: 0 7px 25px rgba(30,40,100,0.08);
 }
 
-.features li{
-    margin:9px 0;
+.pyq-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
 }
 
-.features li::first-letter{
-    color:#16a36b;
+.year-card {
+    background: #f4f6ff;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    text-align: center;
 }
 
-.card-btn{
-    display:inline-block;
+.year-card h3 {
+    color: #293b92;
 
-    background:#eef2ff;
-
-    color:#233778;
-
-    text-decoration:none;
-
-    padding:9px 13px;
-
-    border-radius:10px;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    margin:3px;
+    margin-bottom: 12px;
 }
 
-.card-btn:hover{
-    background:#243b78;
-    color:white;
+.year-card a {
+    display: block;
+
+    background: white;
+
+    margin: 7px 0;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    color: #283593;
+
+    font-size: 13px;
+
+    font-weight: bold;
 }
 
-/* ==============================
-   PYQ LIBRARY
-============================== */
-
-.pyq-section{
-    margin-top:70px;
-}
-
-.pyq-tabs{
-
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-
-    gap:10px;
-
-    margin-bottom:25px;
-}
-
-.tab-btn{
-
-    border:0;
-
-    background:white;
-
-    color:#25366f;
-
-    padding:12px 20px;
-
-    border-radius:30px;
-
-    cursor:pointer;
-
-    font-weight:800;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.tab-btn.active{
-    background:#253d82;
-    color:white;
-}
-
-.pyq-panel{
-    display:none;
-}
-
-.pyq-panel.active{
-    display:block;
-}
-
-.year-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:16px;
-}
-
-.year-card{
-
-    background:white;
-
-    border-radius:17px;
-
-    padding:20px;
-
-    text-align:center;
-
-    border:1px solid #e5e8f1;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
-
-    transition:.3s;
-}
-
-.year-card:hover{
-    transform:translateY(-5px);
-}
-
-.year-card h3{
-    color:#1b2d68;
-    margin-bottom:12px;
-    font-size:23px;
-}
-
-.year-card a{
-
-    display:block;
-
-    text-decoration:none;
-
-    padding:9px;
-
-    border-radius:9px;
-
-    margin-top:8px;
-
-    background:#f0f3ff;
-
-    color:#29418b;
-
-    font-size:13px;
-
-    font-weight:700;
-}
-
-.year-card a:hover{
-    background:#29418b;
-    color:white;
-}
-
-/* ==============================
-   FREE RESOURCES
-============================== */
-
-.resource-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:20px;
-}
-
-.resource-card{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    text-align:center;
-
-    box-shadow:0 6px 24px rgba(0,0,0,.07);
-
-    transition:.3s;
-}
-
-.resource-card:hover{
-    transform:translateY(-5px);
-}
-
-.resource-icon{
-    font-size:42px;
-}
-
-.resource-card h3{
-    color:#18275d;
-    margin:7px 0;
-}
-
-.resource-card p{
-    color:#667085;
-    font-size:14px;
-    margin-bottom:15px;
-}
-
-/* ==============================
+/* =========================
    YOUTUBE
-============================== */
+========================= */
 
-.youtube{
-
-    margin-top:60px;
-
-    padding:50px 25px;
-
-    border-radius:25px;
-
-    text-align:center;
-
-    color:white;
-
-    background:linear-gradient(135deg,#111936,#541e79);
+.youtube-section {
+    background: linear-gradient(135deg, #fff2f2, #fff);
 }
 
-.youtube h2{
-    font-size:34px;
+.youtube-box {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 7px 25px rgba(50,20,20,0.08);
 }
 
-.youtube p{
-    max-width:700px;
-    margin:10px auto;
-    opacity:.9;
+.youtube-icon {
+    font-size: 65px;
+
+    margin-bottom: 15px;
 }
 
-.youtube-btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:14px 25px;
-
-    border-radius:12px;
-
-    background:#ff1744;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:800;
+.youtube-box h2 {
+    margin-bottom: 10px;
 }
 
-/* ==============================
-   OFFICIAL SOURCES
-============================== */
+.youtube-box p {
+    color: #687086;
 
-.official-grid{
+    max-width: 700px;
 
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:18px;
+    margin: auto auto 25px;
 }
 
-.official-card{
+.youtube-btn {
+    display: inline-block;
 
-    background:white;
+    background: #ff0000;
 
-    padding:22px;
+    color: white;
 
-    border-radius:16px;
+    padding: 13px 25px;
 
-    border-left:5px solid #283d88;
+    border-radius: 30px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    font-weight: bold;
 }
 
-.official-card h3{
-    color:#1c2d69;
+/* =========================
+   OFFICIAL RESOURCES
+========================= */
+
+.official-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
 }
 
-.official-card p{
-    color:#697386;
-    font-size:14px;
-    margin:6px 0 12px;
+.official-card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(20,30,70,0.07);
 }
 
-.official-card a{
-    text-decoration:none;
-    color:#3156c8;
-    font-weight:700;
+.official-card h3 {
+    margin-bottom: 8px;
 }
 
-/* ==============================
+.official-card p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.official-card a {
+    display: inline-block;
+
+    color: #293b92;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice {
+    background: #fff9e6;
+
+    border-left: 5px solid #ffd84d;
+
+    padding: 18px 20px;
+
+    border-radius: 12px;
+
+    margin: 25px 0;
+
+    color: #5f4b00;
+}
+
+/* =========================
    FOOTER
-============================== */
+========================= */
 
-footer{
+footer {
+    background: #101a3b;
 
-    background:#10172d;
+    color: white;
 
-    color:#cfd5e7;
+    padding: 45px 20px 20px;
 
-    text-align:center;
-
-    padding:35px 20px;
+    text-align: center;
 }
 
-footer strong{
-    color:white;
+.footer-logo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
 }
 
-footer a{
-    color:#ffd54a;
-    text-decoration:none;
+.footer-logo img {
+    width: 45px;
+
+    height: 45px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    padding: 3px;
 }
 
-/* ==============================
+footer p {
+    color: #cbd2e8;
+
+    font-size: 14px;
+
+    margin: 7px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+
+    margin: 0 8px;
+
+    font-size: 13px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+}
+
+/* =========================
+   SEARCH HIGHLIGHT
+========================= */
+
+.searchable.hidden {
+    display: none;
+}
+
+.no-results {
+    display: none;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+}
+
+/* =========================
    MOBILE
-============================== */
+========================= */
 
-@media(max-width:950px){
+@media(max-width: 950px) {
 
-    .exam-grid{
-        grid-template-columns:1fr;
+    .nav-links {
+        display: none;
     }
 
-    .year-grid{
-        grid-template-columns:repeat(2,1fr);
+    .class-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .resource-grid{
-        grid-template-columns:repeat(2,1fr);
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .official-grid{
-        grid-template-columns:1fr;
+    .class-resources {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .nav-links{
-        display:none;
+    .official-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pyq-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(max-width:600px){
+@media(max-width: 600px) {
 
-    .hero{
-        min-height:470px;
-        padding:60px 20px;
+    .navbar {
+        padding: 10px 15px;
     }
 
-    .hero h1{
-        font-size:42px;
+    .brand {
+        font-size: 18px;
     }
 
-    .hero p{
-        font-size:16px;
+    .brand img {
+        width: 42px;
+        height: 42px;
     }
 
-    .year-grid{
-        grid-template-columns:1fr;
+    .hero {
+        min-height: 520px;
+
+        padding: 60px 15px;
     }
 
-    .resource-grid{
-        grid-template-columns:1fr;
+    .hero p {
+        font-size: 16px;
     }
 
-    .exam-card{
-        padding:23px;
+    section {
+        padding: 50px 0;
     }
 
-    .section-title h2{
-        font-size:28px;
+    .section-title {
+        font-size: 28px;
     }
 
+    .class-grid,
+    .resource-grid,
+    .class-resources,
+    .exam-grid,
+    .official-grid,
+    .pyq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pyq-box {
+        padding: 20px;
+    }
+
+    .search-box {
+        width: 94%;
+    }
+
+    .search-box button {
+        padding: 10px 14px;
+    }
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ==============================
-     NAVIGATION
-============================== -->
+<!-- =========================
+     NAVBAR
+========================= -->
 
 <nav class="navbar">
 
-<a href="index.html" class="brand">
+    <a href="index.html" class="brand">
 
-<img src="logo.jpg" alt="Paridhi Tutors Logo">
+        <img src="logo.jpg" alt="Paridhi Tutors Logo">
 
-<span>Paridhi Tutors</span>
+        <span>Paridhi Tutors</span>
 
-</a>
+    </a>
 
-<div class="nav-links">
+    <div class="nav-links">
 
-<a href="index.html">Home</a>
+        <a href="#home">Home</a>
 
-<a href="#exams">NEET & JEE</a>
+        <a href="#classes">Classes 1–12</a>
 
-<a href="#pyq">PYQ Library</a>
+        <a href="#resources">Resources</a>
 
-<a href="#resources">Resources</a>
+        <a href="#exams">NEET & JEE</a>
 
-<a href="#videos">Videos</a>
+        <a href="#pyq">PYQ</a>
 
-</div>
+        <a href="#videos">Videos</a>
+
+    </div>
 
 </nav>
 
 
-<!-- ==============================
+<!-- =========================
      HERO
-============================== -->
+========================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div class="sparkle s1">✦</div>
-<div class="sparkle s2">✧</div>
-<div class="sparkle s3">✦</div>
-<div class="sparkle s4">✧</div>
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div>
+    <div class="sparkle s4">✧</div>
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<div class="badge">
-🎓 FREE NEET & JEE RESOURCES
-</div>
+        <div class="badge">
+            🎓 WELCOME TO PARIDHI TUTORS
+        </div>
 
-<h1>
+        <h1>
+            Learn Better.<br>
+            <span>Achieve More.</span>
+        </h1>
 
-NEET & <span>JEE</span><br>
+        <p>
+            Free educational resources for Classes 1–12,
+            NCERT Books, Previous Year Questions, Solutions,
+            Mock Tests, NEET, JEE and Video Lectures.
+        </p>
 
-Preparation Hub
+        <div class="hero-buttons">
 
-</h1>
+            <a href="#classes" class="btn btn-primary">
+                📚 Explore Classes
+            </a>
 
-<p>
+            <a href="#exams" class="btn btn-outline">
+                🎯 Entrance Exams
+            </a>
 
-Previous Year Question Papers • Answer Keys •
-Study Material • Practice Resources •
-Free Video Lectures
+        </div>
 
-</p>
-
-<div class="hero-buttons">
-
-<a href="#pyq" class="btn btn-primary">
-
-🚀 Explore PYQ Library
-
-</a>
-
-<a href="https://www.youtube.com/@paridhitutors2842"
-target="_blank"
-class="btn btn-outline">
-
-▶ Free Video Lectures
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- ==============================
+<!-- =========================
      SEARCH
-============================== -->
+========================= -->
 
-<div class="search-box">
+<div class="search-area">
 
-<input
-type="text"
-id="searchBox"
-placeholder="🔎 Search NEET, JEE Main, JEE Advanced, PYQ, Answer Key..."
-onkeyup="searchCards()">
+    <div class="search-box">
 
-</div>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search Class, NCERT, PYQ, NEET, JEE..."
+            onkeyup="searchWebsite()"
+        >
 
+        <button onclick="searchWebsite()">
+            Search
+        </button>
 
-<main class="container">
-
-
-<!-- ==============================
-     EXAMS
-============================== -->
-
-<section id="exams">
-
-<div class="section-title">
-
-<h2>🎯 Choose Your Examination</h2>
-
-<p>
-Select your exam and access important preparation resources.
-</p>
+    </div>
 
 </div>
 
 
-<div class="exam-grid">
+<!-- =========================
+     CLASSES 1–12
+========================= -->
 
+<section id="classes">
 
-<!-- NEET -->
+<div class="container">
 
-<div class="exam-card searchable">
+    <h2 class="section-title">
+        📚 <span>Classes 1–12</span>
+    </h2>
 
-<div class="exam-icon">🩺</div>
+    <p class="section-subtitle">
+        Select your class and explore NCERT Books,
+        Previous Year Questions, Solutions and Mock Tests.
+    </p>
 
-<h3>NEET UG</h3>
+    <div class="class-grid">
 
-<p>
-Medical entrance examination resources for
-future doctors.
-</p>
 
-<ul class="features">
+        <!-- CLASS 1 -->
 
-<li>✅ Previous Year Question Papers</li>
-<li>✅ Official Answer Keys</li>
-<li>✅ Syllabus & Documents</li>
-<li>✅ Study Material</li>
-<li>✅ Free Video Lectures</li>
+        <div class="class-card searchable">
 
-</ul>
+            <div class="class-icon">🌱</div>
 
-<a class="card-btn"
-href="https://neet.nta.nic.in/documents/"
-target="_blank">
+            <h3>Class 1</h3>
 
-📄 Official Documents
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-</a>
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<a class="card-btn"
-href="https://neet.nta.nic.in/"
-target="_blank">
+        </div>
 
-🔗 NTA Website
 
-</a>
+        <!-- CLASS 2 -->
 
-</div>
+        <div class="class-card searchable">
 
+            <div class="class-icon">📖</div>
 
-<!-- JEE MAIN -->
+            <h3>Class 2</h3>
 
-<div class="exam-card main-card searchable">
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-<div class="exam-icon">⚡</div>
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<h3>JEE Main</h3>
+        </div>
 
-<p>
-Engineering entrance preparation resources
-for NITs, IIITs and other institutes.
-</p>
 
-<ul class="features">
+        <!-- CLASS 3 -->
 
-<li>✅ Previous Year Question Papers</li>
-<li>✅ Official Answer Keys</li>
-<li>✅ NTA Documents</li>
-<li>✅ Practice Resources</li>
-<li>✅ Free Video Lectures</li>
+        <div class="class-card searchable">
 
-</ul>
+            <div class="class-icon">✏️</div>
 
-<a class="card-btn"
-href="https://jeemain.nta.nic.in/documents/"
-target="_blank">
+            <h3>Class 3</h3>
 
-📄 Official Documents
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-</a>
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<a class="card-btn"
-href="https://jeemain.nta.nic.in/"
-target="_blank">
+        </div>
 
-🔗 JEE Main Website
 
-</a>
+        <!-- CLASS 4 -->
 
-</div>
+        <div class="class-card searchable">
 
+            <div class="class-icon">📚</div>
 
-<!-- JEE ADVANCED -->
+            <h3>Class 4</h3>
 
-<div class="exam-card advanced-card searchable">
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-<div class="exam-icon">🚀</div>
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<h3>JEE Advanced</h3>
+        </div>
 
-<p>
-Advanced preparation resources for
-students targeting IITs.
-</p>
 
-<ul class="features">
+        <!-- CLASS 5 -->
 
-<li>✅ Previous Year Papers</li>
-<li>✅ Official Answer Keys</li>
-<li>✅ Question Archive</li>
-<li>✅ IIT Resources</li>
-<li>✅ Free Video Lectures</li>
+        <div class="class-card searchable">
 
-</ul>
+            <div class="class-icon">🎒</div>
 
-<a class="card-btn"
-href="https://jeeadv.ac.in/archive.html"
-target="_blank">
+            <h3>Class 5</h3>
 
-📄 PYQ Archive
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-</a>
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<a class="card-btn"
-href="https://jeeadv.ac.in/"
-target="_blank">
+        </div>
 
-🔗 Official Website
 
-</a>
+        <!-- CLASS 6 -->
 
-</div>
+        <div class="class-card searchable">
 
+            <div class="class-icon">📘</div>
 
-</div>
+            <h3>Class 6</h3>
 
-</section>
+            <p>
+                NCERT Books & learning resources
+            </p>
 
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<!-- ==============================
-     PYQ LIBRARY
-============================== -->
+        </div>
 
-<section id="pyq" class="pyq-section">
 
-<div class="section-title">
+        <!-- CLASS 7 -->
 
-<h2>📚 Previous Year Question Paper Library</h2>
+        <div class="class-card searchable">
 
-<p>
-Practice previous years to understand question patterns,
-difficulty level and important topics.
-</p>
+            <div class="class-icon">📝</div>
 
-</div>
+            <h3>Class 7</h3>
 
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-<div class="pyq-tabs">
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-<button class="tab-btn active"
-onclick="showTab('neet',this)">
+        </div>
 
-🩺 NEET UG
 
-</button>
+        <!-- CLASS 8 -->
 
-<button class="tab-btn"
-onclick="showTab('main',this)">
+        <div class="class-card searchable">
 
-⚡ JEE Main
+            <div class="class-icon">🎓</div>
 
-</button>
+            <h3>Class 8</h3>
 
-<button class="tab-btn"
-onclick="showTab('advanced',this)">
+            <p>
+                NCERT Books & learning resources
+            </p>
 
-🚀 JEE Advanced
+            <a href="#resources" class="small-btn">
+                Explore
+            </a>
 
-</button>
+        </div>
 
-</div>
 
+        <!-- CLASS 9 -->
 
-<!-- NEET -->
+        <div class="class-card searchable">
 
-<div id="neet" class="pyq-panel active">
+            <div class="class-icon">📕</div>
 
-<div class="year-grid">
+            <h3>Class 9</h3>
 
+            <p>
+                NCERT + PYQ + Solutions + Mock Tests
+            </p>
 
-<div class="year-card">
+            <a href="#class9-12" class="small-btn">
+                Explore
+            </a>
 
-<h3>2025</h3>
+        </div>
 
-<a href="https://neet.nta.nic.in/documents/"
-target="_blank">
 
-📄 Official Resources
+        <!-- CLASS 10 -->
 
-</a>
+        <div class="class-card searchable">
 
-<a href="https://neet.nta.nic.in/"
-target="_blank">
+            <div class="class-icon">🏆</div>
 
-🔗 NTA Website
+            <h3>Class 10</h3>
 
-</a>
+            <p>
+                NCERT + PYQ + Solutions + Mock Tests
+            </p>
 
-</div>
+            <a href="#class9-12" class="small-btn">
+                Explore
+            </a>
 
+        </div>
 
-<div class="year-card">
 
-<h3>2024</h3>
+        <!-- CLASS 11 -->
 
-<a href="https://neet.nta.nic.in/documents/"
-target="_blank">
+        <div class="class-card searchable">
 
-📄 Question Paper / Documents
+            <div class="class-icon">🔬</div>
 
-</a>
+            <h3>Class 11</h3>
 
-</div>
+            <p>
+                NCERT + PYQ + Solutions + Mock Tests
+            </p>
 
+            <a href="#class9-12" class="small-btn">
+                Explore
+            </a>
 
-<div class="year-card">
+        </div>
 
-<h3>2023</h3>
 
-<a href="https://neet.nta.nic.in/documents/"
-target="_blank">
+        <!-- CLASS 12 -->
 
-📄 Official Documents
+        <div class="class-card searchable">
 
-</a>
+            <div class="class-icon">🚀</div>
 
-</div>
+            <h3>Class 12</h3>
 
+            <p>
+                NCERT + PYQ + Solutions + Mock Tests
+            </p>
 
-<div class="year-card">
+            <a href="#class9-12" class="small-btn">
+                Explore
+            </a>
 
-<h3>2022</h3>
+        </div>
 
-<a href="https://neet.nta.nic.in/documents/"
-target="_blank">
-
-📄 Official Documents
-
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-<!-- JEE MAIN -->
-
-<div id="main" class="pyq-panel">
-
-<div class="year-grid">
-
-
-<div class="year-card">
-
-<h3>2025</h3>
-
-<a href="https://jeemain.nta.nic.in/documents/"
-target="_blank">
-
-📄 Official Documents
-
-</a>
-
-<a href="https://jeemain.nta.nic.in/"
-target="_blank">
-
-🔗 JEE Main Website
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2024</h3>
-
-<a href="https://jeemain.nta.nic.in/documents/"
-target="_blank">
-
-📄 Official Documents
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2023</h3>
-
-<a href="https://jeemain.nta.nic.in/documents/"
-target="_blank">
-
-📄 Official Documents
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2022</h3>
-
-<a href="https://jeemain.nta.nic.in/documents/"
-target="_blank">
-
-📄 Official Documents
-
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-<!-- JEE ADVANCED -->
-
-<div id="advanced" class="pyq-panel">
-
-<div class="year-grid">
-
-
-<div class="year-card">
-
-<h3>2025</h3>
-
-<a href="https://jeeadv.ac.in/archive.html"
-target="_blank">
-
-📄 Question Papers
-
-</a>
-
-<a href="https://jeeadv.ac.in/"
-target="_blank">
-
-🔗 Official Website
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2024</h3>
-
-<a href="https://jeeadv.ac.in/archive.html"
-target="_blank">
-
-📄 Question Papers
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2023</h3>
-
-<a href="https://jeeadv.ac.in/archive.html"
-target="_blank">
-
-📄 Question Papers
-
-</a>
-
-</div>
-
-
-<div class="year-card">
-
-<h3>2022</h3>
-
-<a href="https://jeeadv.ac.in/archive.html"
-target="_blank">
-
-📄 Question Papers
-
-</a>
-
-</div>
-
-
-</div>
+    </div>
 
 </div>
 
 </section>
 
 
-<!-- ==============================
-     FREE RESOURCES
-============================== -->
+<!-- =========================
+     RESOURCE CENTRE
+========================= -->
 
 <section id="resources">
 
-<div class="section-title">
+<div class="container">
 
-<h2>📖 Free Preparation Resources</h2>
+    <h2 class="section-title">
+        📖 <span>Learning Resource Centre</span>
+    </h2>
 
-<p>
-Useful resources to support your preparation.
-</p>
-
-</div>
-
-
-<div class="resource-grid">
+    <p class="section-subtitle">
+        Everything students need for school preparation
+        and competitive examinations.
+    </p>
 
 
-<div class="resource-card searchable">
-
-<div class="resource-icon">📄</div>
-
-<h3>Previous Year Papers</h3>
-
-<p>
-Solve authentic previous-year questions
-to understand the real examination.
-</p>
-
-<a class="card-btn" href="#pyq">
-
-Explore PYQs →
-
-</a>
-
-</div>
+    <div class="resource-grid">
 
 
-<div class="resource-card searchable">
+        <!-- NCERT -->
 
-<div class="resource-icon">✅</div>
+        <div class="resource-card searchable">
 
-<h3>Answer Keys</h3>
+            <div class="resource-icon">
+                📚
+            </div>
 
-<p>
-Check answers using official sources
-wherever available.
-</p>
+            <h3>NCERT Books</h3>
 
-<a class="card-btn"
-href="https://www.nta.ac.in/"
-target="_blank">
+            <p>
+                Class 1 to Class 12 NCERT study books.
+            </p>
 
-Official NTA →
+            <a href="#ncert"
+               class="resource-btn">
+                View Classes
+            </a>
 
-</a>
-
-</div>
-
-
-<div class="resource-card searchable">
-
-<div class="resource-icon">📚</div>
-
-<h3>Free Study Material</h3>
-
-<p>
-Notes, concepts, revision resources
-and useful learning material.
-</p>
-
-<a class="card-btn"
-href="https://swayam.gov.in/"
-target="_blank">
-
-Explore Free Learning →
-
-</a>
-
-</div>
+        </div>
 
 
-<div class="resource-card searchable">
+        <!-- PYQ -->
 
-<div class="resource-icon">📝</div>
+        <div class="resource-card searchable">
 
-<h3>Practice</h3>
+            <div class="resource-icon">
+                📝
+            </div>
 
-<p>
-Improve speed, accuracy and confidence
-through regular practice.
-</p>
+            <h3>Previous Year Papers</h3>
 
-<a class="card-btn"
-href="https://www.nta.ac.in/abhyas"
-target="_blank">
+            <p>
+                Class 9–12 PYQs and examination practice.
+            </p>
 
-NTA Abhyas →
+            <a href="#class9-12"
+               class="resource-btn">
+                Explore PYQ
+            </a>
 
-</a>
+        </div>
 
-</div>
 
+        <!-- SOLUTIONS -->
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                ✅
+            </div>
+
+            <h3>Solutions</h3>
+
+            <p>
+                Step-by-step solutions for important questions.
+            </p>
+
+            <a href="#class9-12"
+               class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+
+        <!-- MOCK TEST -->
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                🎯
+            </div>
+
+            <h3>Mock Tests</h3>
+
+            <p>
+                Practice tests for Classes 9–12 and entrance exams.
+            </p>
+
+            <a href="#mock-tests"
+               class="resource-btn">
+                Practice
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
 </section>
 
 
-<!-- ==============================
+<!-- =========================
+     NCERT BOOKS
+========================= -->
+
+<section id="ncert">
+
+<div class="container">
+
+    <h2 class="section-title">
+        📚 <span>NCERT Books – Class 1 to 12</span>
+    </h2>
+
+    <p class="section-subtitle">
+        NCERT study material will be organised class-wise
+        for easy access.
+    </p>
+
+
+    <div class="notice">
+
+        <strong>📌 Important:</strong>
+        NCERT PDF links will be added here after the
+        corresponding resources are uploaded/organised.
+        We will avoid unofficial or incorrect PDF links.
+
+    </div>
+
+
+    <div class="class-resources">
+
+
+        <div class="details-card searchable">
+
+            <h3>Classes 1–5</h3>
+
+            <ul>
+
+                <li>
+                    📘 Class 1 NCERT
+                </li>
+
+                <li>
+                    📘 Class 2 NCERT
+                </li>
+
+                <li>
+                    📘 Class 3 NCERT
+                </li>
+
+                <li>
+                    📘 Class 4 NCERT
+                </li>
+
+                <li>
+                    📘 Class 5 NCERT
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="details-card searchable">
+
+            <h3>Classes 6–8</h3>
+
+            <ul>
+
+                <li>
+                    📗 Class 6 NCERT
+                </li>
+
+                <li>
+                    📗 Class 7 NCERT
+                </li>
+
+                <li>
+                    📗 Class 8 NCERT
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="details-card searchable">
+
+            <h3>Classes 9–12</h3>
+
+            <ul>
+
+                <li>
+                    📕 Class 9 NCERT
+                </li>
+
+                <li>
+                    📕 Class 10 NCERT
+                </li>
+
+                <li>
+                    📕 Class 11 NCERT
+                </li>
+
+                <li>
+                    📕 Class 12 NCERT
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CLASS 9–12 PYQ
+========================= -->
+
+<section id="class9-12">
+
+<div class="container">
+
+    <h2 class="section-title">
+        📝 <span>Class 9–12 PYQ & Solutions</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Previous Year Question Papers, solutions and
+        examination practice for Classes 9 to 12.
+    </p>
+
+
+    <div class="pyq-box">
+
+
+        <div class="pyq-grid">
+
+
+            <!-- CLASS 9 -->
+
+            <div class="year-card searchable">
+
+                <h3>Class 9</h3>
+
+                <a href="#" onclick="comingSoon(event)">
+                    📄 Question Papers
+                </a>
+
+                <a href="#" onclick="comingSoon(event)">
+                    ✅ Solutions
+                </a>
+
+                <a href="#mock-tests">
+                    🎯 Mock Tests
+                </a>
+
+            </div>
+
+
+            <!-- CLASS 10 -->
+
+            <div class="year-card searchable">
+
+                <h3>Class 10</h3>
+
+                <a href="#" onclick="comingSoon(event)">
+                    📄 Question Papers
+                </a>
+
+                <a href="#" onclick="comingSoon(event)">
+                    ✅ Solutions
+                </a>
+
+                <a href="#mock-tests">
+                    🎯 Mock Tests
+                </a>
+
+            </div>
+
+
+            <!-- CLASS 11 -->
+
+            <div class="year-card searchable">
+
+                <h3>Class 11</h3>
+
+                <a href="#" onclick="comingSoon(event)">
+                    📄 Question Papers
+                </a>
+
+                <a href="#" onclick="comingSoon(event)">
+                    ✅ Solutions
+                </a>
+
+                <a href="#mock-tests">
+                    🎯 Mock Tests
+                </a>
+
+            </div>
+
+
+            <!-- CLASS 12 -->
+
+            <div class="year-card searchable">
+
+                <h3>Class 12</h3>
+
+                <a href="#" onclick="comingSoon(event)">
+                    📄 Question Papers
+                </a>
+
+                <a href="#" onclick="comingSoon(event)">
+                    ✅ Solutions
+                </a>
+
+                <a href="#mock-tests">
+                    🎯 Mock Tests
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MOCK TESTS
+========================= -->
+
+<section id="mock-tests">
+
+<div class="container">
+
+    <h2 class="section-title">
+        🎯 <span>Mock Tests</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Practice regularly and improve your examination
+        preparation.
+    </p>
+
+
+    <div class="resource-grid">
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                📘
+            </div>
+
+            <h3>Class 9 Mock Test</h3>
+
+            <p>
+                Subject-wise practice tests.
+            </p>
+
+            <a href="#" onclick="comingSoon(event)"
+               class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                📕
+            </div>
+
+            <h3>Class 10 Mock Test</h3>
+
+            <p>
+                Board examination practice.
+            </p>
+
+            <a href="#" onclick="comingSoon(event)"
+               class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                🔬
+            </div>
+
+            <h3>Class 11 Mock Test</h3>
+
+            <p>
+                Science stream practice tests.
+            </p>
+
+            <a href="#" onclick="comingSoon(event)"
+               class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                🚀
+            </div>
+
+            <h3>Class 12 Mock Test</h3>
+
+            <p>
+                Board + competitive exam practice.
+            </p>
+
+            <a href="#" onclick="comingSoon(event)"
+               class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     NEET & JEE
+========================= -->
+
+<section class="exam-section" id="exams">
+
+<div class="container">
+
+    <h2 class="section-title">
+        🎓 <span>NEET & JEE Preparation</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Previous Year Question Papers and official
+        examination resources for major entrance exams.
+    </p>
+
+
+    <div class="exam-grid">
+
+
+        <!-- NEET -->
+
+        <div class="exam-card searchable">
+
+            <div class="exam-logo">
+                🩺
+            </div>
+
+            <h3>NEET UG</h3>
+
+            <p>
+                NEET UG previous year papers,
+                answer keys and official resources.
+            </p>
+
+            <div class="exam-buttons">
+
+                <a
+                href="https://neet.nta.nic.in/documents/"
+                target="_blank">
+                    PYQ / Documents
+                </a>
+
+                <a
+                href="https://neet.nta.nic.in/"
+                target="_blank">
+                    Official Website
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- JEE MAIN -->
+
+        <div class="exam-card searchable">
+
+            <div class="exam-logo">
+                ⚡
+            </div>
+
+            <h3>JEE Main</h3>
+
+            <p>
+                JEE Main previous year papers,
+                answer keys and official resources.
+            </p>
+
+            <div class="exam-buttons">
+
+                <a
+                href="https://jeemain.nta.nic.in/documents/"
+                target="_blank">
+                    PYQ / Documents
+                </a>
+
+                <a
+                href="https://jeemain.nta.nic.in/"
+                target="_blank">
+                    Official Website
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- JEE ADVANCED -->
+
+        <div class="exam-card searchable">
+
+            <div class="exam-logo">
+                🚀
+            </div>
+
+            <h3>JEE Advanced</h3>
+
+            <p>
+                Previous year papers and official
+                JEE Advanced examination resources.
+            </p>
+
+            <div class="exam-buttons">
+
+                <a
+                href="https://jeeadv.ac.in/archive.html"
+                target="_blank">
+                    PYQ Archive
+                </a>
+
+                <a
+                href="https://jeeadv.ac.in/"
+                target="_blank">
+                    Official Website
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PYQ LIBRARY
+========================= -->
+
+<section id="pyq">
+
+<div class="container">
+
+    <h2 class="section-title">
+        📑 <span>Entrance Exam PYQ Library</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Quick access to official previous year paper
+        archives.
+    </p>
+
+
+    <div class="resource-grid">
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                🩺
+            </div>
+
+            <h3>NEET UG PYQ</h3>
+
+            <p>
+                Previous year papers and official documents.
+            </p>
+
+            <a
+            href="https://neet.nta.nic.in/documents/"
+            target="_blank"
+            class="resource-btn">
+                Open Archive
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                ⚡
+            </div>
+
+            <h3>JEE Main PYQ</h3>
+
+            <p>
+                Previous year papers and official documents.
+            </p>
+
+            <a
+            href="https://jeemain.nta.nic.in/documents/"
+            target="_blank"
+            class="resource-btn">
+                Open Archive
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                🚀
+            </div>
+
+            <h3>JEE Advanced PYQ</h3>
+
+            <p>
+                Official previous year question paper archive.
+            </p>
+
+            <a
+            href="https://jeeadv.ac.in/archive.html"
+            target="_blank"
+            class="resource-btn">
+                Open Archive
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="resource-icon">
+                📚
+            </div>
+
+            <h3>Study Material</h3>
+
+            <p>
+                More learning resources will be added regularly.
+            </p>
+
+            <a
+            href="#"
+            onclick="comingSoon(event)"
+            class="resource-btn coming">
+                Coming Soon
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
      YOUTUBE
-============================== -->
+========================= -->
 
-<section id="videos" class="youtube">
+<section class="youtube-section" id="videos">
 
-<h2>🎥 Free Video Lectures</h2>
+<div class="container">
 
-<p>
+    <div class="youtube-box">
 
-Learn concepts, solve questions and revise important
-topics through Paridhi Tutors' free YouTube lectures.
+        <div class="youtube-icon">
+            ▶️
+        </div>
 
-</p>
+        <h2>
+            Learn with Paridhi Tutors
+        </h2>
 
-<a class="youtube-btn"
-href="https://www.youtube.com/@paridhitutors2842"
-target="_blank">
+        <p>
+            Watch educational videos, concepts,
+            exam preparation and useful learning content
+            on our YouTube channel.
+        </p>
 
-▶ Visit Paridhi Tutors YouTube Channel
+        <a
+        href="https://www.youtube.com/@paridhitutors2842"
+        target="_blank"
+        class="youtube-btn">
 
-</a>
+            ▶ Watch Videos on YouTube
+
+        </a>
+
+    </div>
+
+</div>
 
 </section>
 
 
-<!-- ==============================
-     OFFICIAL SOURCES
-============================== -->
+<!-- =========================
+     OFFICIAL RESOURCES
+========================= -->
 
 <section>
 
-<div class="section-title">
+<div class="container">
 
-<h2>🔗 Official Examination Websites</h2>
+    <h2 class="section-title">
+        🌐 <span>Official Education Resources</span>
+    </h2>
 
-<p>
-For important notices, dates, applications and results,
-always verify information from official sources.
-</p>
-
-</div>
-
-
-<div class="official-grid">
+    <p class="section-subtitle">
+        Useful official websites for students.
+    </p>
 
 
-<div class="official-card">
-
-<h3>🩺 NEET UG — NTA</h3>
-
-<p>
-Official National Eligibility cum Entrance Test website.
-</p>
-
-<a href="https://neet.nta.nic.in/"
-target="_blank">
-
-Visit Official Website →
-
-</a>
-
-</div>
+    <div class="official-grid">
 
 
-<div class="official-card">
+        <div class="official-card">
 
-<h3>⚡ JEE Main — NTA</h3>
+            <h3>📚 NCERT</h3>
 
-<p>
-Official JEE Main examination website.
-</p>
+            <p>
+                Official NCERT website and publications.
+            </p>
 
-<a href="https://jeemain.nta.nic.in/"
-target="_blank">
+            <a
+            href="https://ncert.nic.in/"
+            target="_blank">
+                Visit NCERT →
+            </a>
 
-Visit Official Website →
-
-</a>
-
-</div>
-
-
-<div class="official-card">
-
-<h3>🚀 JEE Advanced</h3>
-
-<p>
-Official JEE Advanced and IIT entrance website.
-</p>
-
-<a href="https://jeeadv.ac.in/"
-target="_blank">
-
-Visit Official Website →
-
-</a>
-
-</div>
+        </div>
 
 
-<div class="official-card">
+        <div class="official-card">
 
-<h3>🏛️ National Testing Agency</h3>
+            <h3>🎓 NTA</h3>
 
-<p>
-Official NTA portal for national-level examinations.
-</p>
+            <p>
+                National Testing Agency.
+            </p>
 
-<a href="https://www.nta.ac.in/"
-target="_blank">
+            <a
+            href="https://www.nta.ac.in/"
+            target="_blank">
+                Visit NTA →
+            </a>
 
-Visit NTA →
-
-</a>
-
-</div>
-
-
-<div class="official-card">
-
-<h3>🧪 NTA Abhyas</h3>
-
-<p>
-Practice resources from the National Testing Agency.
-</p>
-
-<a href="https://www.nta.ac.in/abhyas"
-target="_blank">
-
-Practice Now →
-
-</a>
-
-</div>
+        </div>
 
 
-<div class="official-card">
+        <div class="official-card">
 
-<h3>🎓 SWAYAM</h3>
+            <h3>🧪 NTA Abhyas</h3>
 
-<p>
-Government-supported platform for free online learning.
-</p>
+            <p>
+                Practice resources for competitive exams.
+            </p>
 
-<a href="https://swayam.gov.in/"
-target="_blank">
+            <a
+            href="https://www.nta.ac.in/Abhyas"
+            target="_blank">
+                Visit NTA Abhyas →
+            </a>
 
-Explore SWAYAM →
+        </div>
 
-</a>
 
-</div>
+        <div class="official-card">
 
+            <h3>💻 SWAYAM</h3>
+
+            <p>
+                Government online learning platform.
+            </p>
+
+            <a
+            href="https://swayam.gov.in/"
+            target="_blank">
+                Visit SWAYAM →
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
 </section>
 
 
-</main>
-
-
-<!-- ==============================
+<!-- =========================
      FOOTER
-============================== -->
+========================= -->
 
 <footer>
 
-<p>
-© 2026 <strong>Paridhi Tutors</strong>
-</p>
+    <div class="footer-logo">
 
-<p>
-Learn • Practice • Improve • Succeed 🚀
-</p>
+        <img src="logo.jpg" alt="Paridhi Tutors">
 
-<p style="margin-top:10px;">
+        <span>Paridhi Tutors</span>
 
-<a href="index.html">
+    </div>
 
-← Back to Paridhi Tutors Home
+    <p>
+        Learn Better. Achieve More.
+    </p>
 
-</a>
+    <p>
+        Free educational resources for students.
+    </p>
 
-</p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#classes">Classes</a>
+
+        <a href="#resources">Resources</a>
+
+        <a href="#exams">NEET & JEE</a>
+
+        <a href="#videos">YouTube</a>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Paridhi Tutors. All Rights Reserved.
+
+    </div>
 
 </footer>
 
 
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
 <script>
 
-/* ==============================
-   PYQ TABS
-============================== */
+/* =========================
+   SEARCH WEBSITE
+========================= */
 
-function showTab(tabName,button){
+function searchWebsite() {
 
-    const panels =
-        document.querySelectorAll(".pyq-panel");
-
-    panels.forEach(panel=>{
-        panel.classList.remove("active");
-    });
-
-    document.getElementById(tabName)
-    .classList.add("active");
-
-
-    const buttons =
-        document.querySelectorAll(".tab-btn");
-
-    buttons.forEach(btn=>{
-        btn.classList.remove("active");
-    });
-
-    button.classList.add("active");
-
-}
-
-
-/* ==============================
-   SEARCH
-============================== */
-
-function searchCards(){
-
-    const search =
-        document
-        .getElementById("searchBox")
+    const input =
+        document.getElementById("searchInput")
         .value
         .toLowerCase()
         .trim();
 
-    const cards =
+    const items =
         document.querySelectorAll(".searchable");
 
-    cards.forEach(card=>{
+    items.forEach(function(item) {
 
         const text =
-            card.innerText.toLowerCase();
+            item.innerText.toLowerCase();
 
-        if(text.includes(search)){
+        if (input === "" || text.includes(input)) {
 
-            card.style.display="";
+            item.classList.remove("hidden");
 
-        }else{
+        } else {
 
-            card.style.display="none";
+            item.classList.add("hidden");
 
         }
 
@@ -1614,9 +2237,23 @@ function searchCards(){
 
 }
 
-</script>
 
+/* =========================
+   COMING SOON
+========================= */
+
+function comingSoon(event) {
+
+    event.preventDefault();
+
+    alert(
+        "📚 This resource is coming soon!\n\n" +
+        "Paridhi Tutors will add the PDF/resource here."
+    );
+
+}
+
+</script>
 
 </body>
 </html>
-```

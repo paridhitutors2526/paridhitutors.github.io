@@ -1,1132 +1,1172 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Paridhi Tutors | Learn • Practice • Succeed</title>
-
-    <meta name="description"
-          content="Paridhi Tutors - Study resources, NCERT books, CBSE question papers, solutions and online mock tests for students.">
-
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-
-        /* ================= HOME PAGE ENHANCEMENTS ================= */
-
-        .home-page {
-            background: #f8fafc;
-        }
-
-        /* HERO */
-
-        .hero-section {
-            min-height: 520px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-            padding: 70px 8%;
-            background:
-                radial-gradient(circle at 85% 20%, rgba(99,102,241,0.20), transparent 30%),
-                radial-gradient(circle at 10% 90%, rgba(14,165,233,0.15), transparent 30%),
-                linear-gradient(135deg, #eef2ff, #f8fafc 55%, #ecfeff);
-            overflow: hidden;
-        }
-
-        .hero-content {
-            max-width: 650px;
-        }
-
-        .hero-label {
-            display: inline-block;
-            padding: 9px 18px;
-            border-radius: 30px;
-            background: white;
-            color: #4f46e5;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            box-shadow: 0 8px 25px rgba(15,23,42,0.08);
-            margin-bottom: 20px;
-        }
-
-        .hero-content h2 {
-            font-size: clamp(42px, 6vw, 70px);
-            line-height: 1.08;
-            margin: 0 0 22px;
-            color: #0f172a;
-            font-weight: 800;
-        }
-
-        .hero-content h2 span {
-            color: #4f46e5;
-        }
-
-        .hero-content > p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #475569;
-            max-width: 580px;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .primary-button,
-        .secondary-button {
-            display: inline-block;
-            padding: 14px 24px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.3s ease;
-        }
-
-        .primary-button {
-            background: #4f46e5;
-            color: white;
-            box-shadow: 0 10px 25px rgba(79,70,229,0.25);
-        }
-
-        .primary-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(79,70,229,0.35);
-        }
-
-        .secondary-button {
-            background: white;
-            color: #334155;
-            border: 1px solid #e2e8f0;
-        }
-
-        .secondary-button:hover {
-            transform: translateY(-3px);
-            border-color: #4f46e5;
-            color: #4f46e5;
-        }
-
-        /* HERO CARD */
-
-        .hero-card {
-            width: 360px;
-            padding: 35px;
-            background: rgba(255,255,255,0.88);
-            border-radius: 28px;
-            box-shadow: 0 25px 60px rgba(15,23,42,0.14);
-            border: 1px solid rgba(255,255,255,0.8);
-            backdrop-filter: blur(12px);
-            animation: floatCard 4s ease-in-out infinite;
-        }
-
-        @keyframes floatCard {
-            0%,100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .hero-card-icon {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .hero-card h3 {
-            font-size: 28px;
-            margin: 0 0 8px;
-            color: #0f172a;
-        }
-
-        .hero-card > p {
-            color: #64748b;
-            margin-bottom: 25px;
-        }
-
-        .hero-card-items {
-            display: grid;
-            gap: 12px;
-        }
-
-        .hero-card-items div {
-            padding: 13px 15px;
-            background: #f8fafc;
-            border-radius: 12px;
-            color: #334155;
-            font-weight: 600;
-        }
-
-        /* CLASS SECTION */
-
-        .classes-section {
-            padding: 75px 8%;
-            background: white;
-        }
-
-        .section-heading {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 40px;
-        }
-
-        .section-heading span {
-            color: #4f46e5;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-        }
-
-        .section-heading h2 {
-            font-size: 36px;
-            color: #0f172a;
-            margin: 10px 0;
-        }
-
-        .section-heading p {
-            color: #64748b;
-            line-height: 1.6;
-        }
-
-        .class-grid {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 22px;
-        }
-
-        .class-card {
-            position: relative;
-            padding: 30px 24px;
-            border-radius: 20px;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            text-align: center;
-            text-decoration: none;
-            transition: 0.3s ease;
-            overflow: hidden;
-        }
-
-        .class-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 40px rgba(15,23,42,0.10);
-            border-color: #c7d2fe;
-        }
-
-        .class-number {
-            width: 65px;
-            height: 65px;
-            margin: 0 auto 18px;
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #eef2ff;
-            color: #4f46e5;
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        .class-card h3 {
-            color: #0f172a;
-            margin: 0 0 8px;
-            font-size: 22px;
-        }
-
-        .class-card p {
-            color: #64748b;
-            margin: 0 0 18px;
-            font-size: 14px;
-        }
-
-        .class-link {
-            color: #4f46e5;
-            font-weight: 700;
-        }
-
-        /* FEATURES */
-
-        .features-section {
-            padding: 75px 8%;
-            background: #f8fafc;
-        }
-
-        .feature-grid {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 22px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 28px 24px;
-            border-radius: 20px;
-            border: 1px solid #e2e8f0;
-            transition: 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 18px 40px rgba(15,23,42,0.09);
-        }
-
-        .feature-icon {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .feature-card h3 {
-            color: #0f172a;
-            margin: 0 0 10px;
-        }
-
-        .feature-card p {
-            color: #64748b;
-            line-height: 1.6;
-            font-size: 15px;
-        }
-
-        .feature-card a {
-            color: #4f46e5;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        /* MOCK TEST BANNER */
-
-        .mock-highlight {
-            margin: 70px auto;
-            max-width: 1100px;
-            padding: 45px;
-            border-radius: 28px;
-            background: linear-gradient(135deg, #312e81, #4f46e5);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            box-shadow: 0 25px 50px rgba(49,46,129,0.25);
-        }
-
-        .mock-highlight h2 {
-            margin: 0 0 10px;
-            font-size: 32px;
-        }
-
-        .mock-highlight p {
-            margin: 0;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
-        .mock-button {
-            background: white;
-            color: #312e81;
-            padding: 14px 24px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 800;
-            white-space: nowrap;
-            transition: 0.3s;
-        }
-
-        .mock-button:hover {
-            transform: translateY(-3px);
-        }
-
-        /* WHY US */
-
-        .why-section {
-            padding: 75px 8%;
-            background: white;
-        }
-
-        .why-grid {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .why-card {
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .why-card .why-icon {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .why-card h3 {
-            color: #0f172a;
-            margin-bottom: 10px;
-        }
-
-        .why-card p {
-            color: #64748b;
-            line-height: 1.6;
-        }
-
-        /* ABOUT */
-
-        .about-section {
-            padding: 75px 8%;
-            background: #f8fafc;
-        }
-
-        .about-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .about-content > span {
-            color: #4f46e5;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-        }
-
-        .about-content h2 {
-            font-size: 36px;
-            color: #0f172a;
-            margin: 12px 0 20px;
-        }
-
-        .about-content p {
-            color: #64748b;
-            line-height: 1.8;
-        }
-
-        /* CONTACT */
-
-        .contact-section {
-            padding: 75px 8%;
-            background: white;
-        }
-
-        .contact-card {
-            max-width: 500px;
-            margin: auto;
-            text-align: center;
-            padding: 35px;
-            background: #f8fafc;
-            border-radius: 22px;
-            border: 1px solid #e2e8f0;
-        }
-
-        .contact-icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .contact-card h3 {
-            color: #0f172a;
-        }
-
-        .contact-card p {
-            color: #64748b;
-        }
-
-        .contact-card a {
-            color: #4f46e5;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 900px) {
-
-            .hero-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 55px 6%;
-            }
-
-            .hero-content > p {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-card {
-                width: auto;
-                max-width: 400px;
-            }
-
-            .class-grid,
-            .feature-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .mock-highlight {
-                margin-left: 6%;
-                margin-right: 6%;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-
-            .hero-content h2 {
-                font-size: 42px;
-            }
-
-            .hero-card {
-                padding: 25px;
-            }
-
-            .class-grid,
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-heading h2,
-            .about-content h2 {
-                font-size: 30px;
-            }
-
-            .mock-highlight {
-                padding: 30px 22px;
-            }
-
-            .mock-highlight h2 {
-                font-size: 27px;
-            }
-
-        }
-
-    </style>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paridhi Tutors | Learn • Practice • Succeed</title>
+
+<meta name="description"
+content="Paridhi Tutors - Free educational resources for CBSE, NEET UG, JEE Main and JEE Advanced students.">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #f6f8fc;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HEADER ================= */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #172033;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.brand-text p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.main-nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main-nav a:hover {
+    color: #4f46e5;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background:
+    radial-gradient(circle at 80% 20%, rgba(99,102,241,.22), transparent 30%),
+    radial-gradient(circle at 10% 80%, rgba(14,165,233,.18), transparent 30%),
+    linear-gradient(135deg,#eef2ff,#ffffff,#ecfeff);
+
+    padding: 75px 25px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: white;
+    color: #4f46e5;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.hero h2 {
+    font-size: clamp(42px,6vw,68px);
+    line-height: 1.05;
+    margin: 22px 0;
+
+    color: #101828;
+}
+
+.hero h2 span {
+    color: #4f46e5;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #526071;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #4f46e5;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: #3730a3;
+}
+
+.btn-secondary {
+    background: white;
+    color: #334155;
+    padding: 15px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: 1px solid #dbe2ea;
+}
+
+.btn-secondary:hover {
+    color: #4f46e5;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    background: rgba(255,255,255,.9);
+    padding: 35px;
+    border-radius: 28px;
+
+    box-shadow: 0 25px 60px rgba(15,23,42,.14);
+}
+
+.hero-card h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.hero-card-item {
+    background: #f8fafc;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    padding: 75px 25px;
+}
+
+.section-light {
+    background: white;
+}
+
+.section-title {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-title small {
+    color: #4f46e5;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+
+/* ================= CATEGORY CARDS ================= */
+
+.card-grid {
+    max-width: 1150px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 22px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    padding: 30px 22px;
+    text-align: center;
+
+    transition: .3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(15,23,42,.10);
+}
+
+.category-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    margin: 8px 0;
+    font-size: 22px;
+}
+
+.category-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+
+/* ================= SCHOOL CLASSES ================= */
+
+.class-card {
+    background: linear-gradient(145deg,#ffffff,#f8fafc);
+}
+
+.class-number {
+    width: 65px;
+    height: 65px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    border-radius: 18px;
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+/* ================= COMPETITIVE ================= */
+
+.competitive-section {
+    background: #101828;
+    color: white;
+}
+
+.competitive-section .section-title h2 {
+    color: white;
+}
+
+.competitive-section .section-title p {
+    color: #cbd5e1;
+}
+
+.exam-card {
+    background: #ffffff;
+    color: #172033;
+    border-radius: 22px;
+    padding: 30px 25px;
+}
+
+.exam-card h3 {
+    font-size: 25px;
+}
+
+.exam-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.exam-links {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.exam-links a {
+    background: #f1f5f9;
+    padding: 11px 13px;
+    border-radius: 10px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.exam-links a:hover {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+
+/* ================= FEATURES ================= */
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 27px;
+    border: 1px solid #e5e7eb;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+
+/* ================= FREE MATERIAL ================= */
+
+.free-material {
+    background: linear-gradient(135deg,#ecfeff,#eef2ff);
+}
+
+.material-grid {
+    max-width: 1050px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.material-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.material-card h3 {
+    margin-top: 0;
+}
+
+.material-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.material-card a {
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+
+/* ================= MOCK TEST ================= */
+
+.mock-banner {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(135deg,#4f46e5,#312e81);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.mock-banner h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.mock-banner p {
+    color: #e0e7ff;
+    line-height: 1.6;
+}
+
+.mock-button {
+    background: white;
+    color: #312e81;
+    padding: 15px 24px;
+    border-radius: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background: #0f172a;
+    color: white;
+    padding: 45px 25px 20px;
+}
+
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-container p {
+    color: #94a3b8;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+}
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .material-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mock-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .hero {
+        padding: 55px 18px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 55px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+}
+
+</style>
 
 </head>
 
-
-<body class="home-page">
-
+<body>
 
 <!-- ================= HEADER ================= -->
 
 <header class="site-header">
 
-    <div class="header-container">
+<div class="header-container">
 
-        <a href="index.html" class="brand">
+<a href="index.html" class="brand">
 
-            <img src="logo.jpg"
-                 alt="Paridhi Tutors Logo"
-                 class="logo">
+<img src="logo.jpg"
+  alt="Paridhi Tutors Logo"
+  class="logo">
 
-            <div class="brand-text">
+<div class="brand-text">
 
-                <h1>Paridhi Tutors</h1>
+<h1>Paridhi Tutors</h1>
 
-                <p>Learn • Practice • Succeed</p>
+<p>Learn • Practice • Succeed</p>
 
-            </div>
+</div>
 
-        </a>
+</a>
 
+<nav class="main-nav">
 
-        <nav class="main-nav">
+<a href="index.html">Home</a>
 
-            <a href="index.html" class="active">
-                Home
-            </a>
+<a href="resources.html">School Resources</a>
 
-            <a href="resources.html">
-                Study Resources
-            </a>
+<a href="competitive-exams.html">NEET & JEE</a>
 
-            <a href="mock-tests.html">
-                Mock Tests
-            </a>
+<a href="mock-tests.html">Mock Tests</a>
 
-            <a href="#about">
-                About
-            </a>
+<a href="#contact">Contact</a>
 
-            <a href="#contact">
-                Contact
-            </a>
+</nav>
 
-        </nav>
-
-    </div>
+</div>
 
 </header>
 
-
-<main>
-
-
 <!-- ================= HERO ================= -->
 
-<section class="hero-section">
+<section class="hero">
 
-    <div class="hero-content">
+<div class="hero-container">
 
-        <span class="hero-label">
-            🎓 WELCOME TO PARIDHI TUTORS
-        </span>
+<div>
 
-        <h2>
-            Learn Better.<br>
-            Practice More.<br>
-            <span>Succeed.</span>
-        </h2>
+<span class="hero-badge">
+🎓 FREE LEARNING RESOURCES
+</span>
 
-        <p>
-            Your simple and growing learning platform for
-            NCERT resources, CBSE papers, solutions and
-            online practice tests.
-        </p>
+<h2>
 
-        <div class="hero-buttons">
+Learn Better.<br>
 
-            <a href="resources.html"
-               class="primary-button">
-                📚 Explore Study Resources →
-            </a>
+Practice More.<br>
 
-            <a href="mock-tests.html"
-               class="secondary-button">
-                🧪 Start Mock Test
-            </a>
+<span>Succeed.</span>
 
-        </div>
+</h2>
 
-    </div>
+<p>
 
+Free and useful educational resources for
+CBSE students and competitive-exam aspirants —
+all in one place.
 
-    <div class="hero-card">
+</p>
 
-        <div class="hero-card-icon">
-            📚
-        </div>
+<div class="hero-buttons">
 
-        <h3>
-            Classes 9–12
-        </h3>
+<a href="resources.html"
+class="btn-primary">
 
-        <p>
-            Everything students need in one place.
-        </p>
+📚 Explore School Resources
 
-        <div class="hero-card-items">
+</a>
 
-            <div>
-                📖 NCERT Books
-            </div>
+<a href="competitive-exams.html"
+class="btn-secondary">
 
-            <div>
-                📝 Previous Year Papers
-            </div>
+🚀 NEET & JEE Resources
 
-            <div>
-                ✅ NCERT Solutions
-            </div>
+</a>
 
-            <div>
-                🧪 Online Mock Tests
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+<div class="hero-card">
 
-</section>
+<h3>📚 What You Can Find</h3>
 
+<div class="hero-card-item">
+📖 NCERT Books — Classes 1–12
+</div>
 
-<!-- ================= CLASS SELECTION ================= -->
+<div class="hero-card-item">
+📝 CBSE Previous Year Papers
+</div>
 
-<section class="classes-section">
+<div class="hero-card-item">
+🧪 NEET & JEE Papers
+</div>
 
-    <div class="section-heading">
+<div class="hero-card-item">
+✅ Solutions & Answer Keys
+</div>
 
-        <span>
-            CHOOSE YOUR CLASS
-        </span>
+<div class="hero-card-item">
+🎯 Online Mock Tests
+</div>
 
-        <h2>
-            Start Learning Today
-        </h2>
+</div>
 
-        <p>
-            Select your class and explore study resources,
-            papers, solutions and practice material.
-        </p>
-
-    </div>
-
-
-    <div class="class-grid">
-
-        <a href="class9.html" class="class-card">
-
-            <div class="class-number">
-                09
-            </div>
-
-            <h3>Class 9</h3>
-
-            <p>
-                Foundation &amp; Concept Building
-            </p>
-
-            <span class="class-link">
-                Explore Class 9 →
-            </span>
-
-        </a>
-
-
-        <a href="class10.html" class="class-card">
-
-            <div class="class-number">
-                10
-            </div>
-
-            <h3>Class 10</h3>
-
-            <p>
-                CBSE Board Preparation
-            </p>
-
-            <span class="class-link">
-                Explore Class 10 →
-            </span>
-
-        </a>
-
-
-        <a href="class11.html" class="class-card">
-
-            <div class="class-number">
-                11
-            </div>
-
-            <h3>Class 11</h3>
-
-            <p>
-                Build Strong Concepts
-            </p>
-
-            <span class="class-link">
-                Explore Class 11 →
-            </span>
-
-        </a>
-
-
-        <a href="class12.html" class="class-card">
-
-            <div class="class-number">
-                12
-            </div>
-
-            <h3>Class 12</h3>
-
-            <p>
-                Board Exam Preparation
-            </p>
-
-            <span class="class-link">
-                Explore Class 12 →
-            </span>
-
-        </a>
-
-    </div>
+</div>
 
 </section>
 
+<!-- ================= SCHOOL ================= -->
+
+<section class="section section-light">
+
+<div class="section-title">
+
+<small>SCHOOL EDUCATION</small>
+
+<h2>CBSE Resources — Classes 1 to 12</h2>
+
+<p>
+
+Find NCERT books, solutions, question papers,
+sample papers and other useful study resources.
+
+</p>
+
+</div>
+
+<div class="card-grid">
+
+<a href="class9.html"
+class="category-card class-card">
+
+<div class="class-number">09</div>
+
+<h3>Class 9</h3>
+
+<p>Build strong concepts and foundations.</p>
+
+<span class="card-link">Explore →</span>
+
+</a>
+
+<a href="class10.html"
+class="category-card class-card">
+
+<div class="class-number">10</div>
+
+<h3>Class 10</h3>
+
+<p>Prepare for CBSE Board examinations.</p>
+
+<span class="card-link">Explore →</span>
+
+</a>
+
+<a href="class11.html"
+class="category-card class-card">
+
+<div class="class-number">11</div>
+
+<h3>Class 11</h3>
+
+<p>Strengthen concepts for higher studies.</p>
+
+<span class="card-link">Explore →</span>
+
+</a>
+
+<a href="class12.html"
+class="category-card class-card">
+
+<div class="class-number">12</div>
+
+<h3>Class 12</h3>
+
+<p>Board examination and career preparation.</p>
+
+<span class="card-link">Explore →</span>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= COMPETITIVE EXAMS ================= -->
+
+<section class="section competitive-section">
+
+<div class="section-title">
+
+<small>COMPETITIVE EXAMS</small>
+
+<h2>Prepare for NEET & JEE</h2>
+
+<p>
+
+Previous year papers, answer keys, solutions
+and free preparation resources.
+
+</p>
+
+</div>
+
+<div class="card-grid">
+
+<div class="exam-card">
+
+<div class="category-icon">🩺</div>
+
+<h3>NEET UG</h3>
+
+<p>
+Medical entrance preparation with
+question papers, answer keys and free study resources.
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#neet">
+📝 Previous Year Papers
+</a>
+
+<a href="competitive-exams.html#neet">
+✅ Answer Keys & Solutions
+</a>
+
+<a href="competitive-exams.html#free-neet">
+📖 Free Study Material
+</a>
+
+</div>
+
+</div>
+
+<div class="exam-card">
+
+<div class="category-icon">⚡</div>
+
+<h3>JEE Main</h3>
+
+<p>
+Engineering entrance preparation with
+previous papers, answer keys and free resources.
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#jee-main">
+📝 Previous Year Papers
+</a>
+
+<a href="competitive-exams.html#jee-main">
+✅ Answer Keys & Solutions
+</a>
+
+<a href="competitive-exams.html#free-jee">
+📖 Free Study Material
+</a>
+
+</div>
+
+</div>
+
+<div class="exam-card">
+
+<div class="category-icon">🚀</div>
+
+<h3>JEE Advanced</h3>
+
+<p>
+Advanced-level preparation with official
+question papers and answer-key resources.
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#jee-advanced">
+📝 Previous Year Papers
+</a>
+
+<a href="competitive-exams.html#jee-advanced">
+✅ Answer Keys & Solutions
+</a>
+
+<a href="competitive-exams.html#free-jee">
+📖 Free Study Material
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FREE RESOURCES ================= -->
+
+<section class="section free-material">
+
+<div class="section-title">
+
+<small>FREE RESOURCES</small>
+
+<h2>Study Without Paying for Material</h2>
+
+<p>
+
+We are collecting links to legitimate free educational
+resources from official education organisations.
+
+</p>
+
+</div>
+
+<div class="material-grid">
+
+<div class="material-card">
+
+<h3>📚 NCERT Books</h3>
+
+<p>
+Official NCERT textbooks for Classes I–XII.
+</p>
+
+<a href="https://ncert.nic.in/textbook.php"
+target="_blank">
+
+Open NCERT Books →
+
+</a>
+
+</div>
+
+<div class="material-card">
+
+<h3>🎥 IIT-PAL Lectures</h3>
+
+<p>
+Free NTA video lectures for JEE Main
+and NEET-UG by IIT professors and subject experts.
+</p>
+
+<a href="https://nta.ac.in/LecturesContent"
+target="_blank">
+
+Watch Free Lectures →
+
+</a>
+
+</div>
+
+<div class="material-card">
+
+<h3>📝 NTA Resources</h3>
+
+<p>
+Official examination documents, notices,
+answer keys and other resources.
+</p>
+
+<a href="https://www.nta.ac.in/"
+target="_blank">
+
+Visit NTA →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- ================= FEATURES ================= -->
 
-<section class="features-section">
+<section class="section section-light">
 
-    <div class="section-heading">
+<div class="section-title">
 
-        <span>
-            WHAT WE PROVIDE
-        </span>
+<small>LEARNING SUPPORT</small>
 
-        <h2>
-            Everything You Need to Prepare
-        </h2>
+<h2>Everything in One Place</h2>
 
-        <p>
-            Useful study resources and practice material
-            collected in one convenient place.
-        </p>
+</div>
 
-    </div>
+<div class="card-grid">
 
+<div class="feature-card">
 
-    <div class="feature-grid">
+<h3>📖 Study Material</h3>
 
+<p>
+NCERT books and free educational resources
+for regular study.
+</p>
 
-        <div class="feature-card">
+</div>
 
-            <div class="feature-icon">
-                📚
-            </div>
+<div class="feature-card">
 
-            <h3>
-                Study Resources
-            </h3>
+<h3>📝 Previous Papers</h3>
 
-            <p>
-                NCERT books, solutions, sample papers
-                and useful study material.
-            </p>
+<p>
+Practice real examination papers to understand
+question patterns.
+</p>
 
-            <a href="resources.html">
-                Explore Resources →
-            </a>
+</div>
 
-        </div>
+<div class="feature-card">
 
+<h3>✅ Solutions</h3>
 
-        <div class="feature-card">
+<p>
+Use answer keys and solution resources to
+check your preparation.
+</p>
 
-            <div class="feature-icon">
-                📝
-            </div>
+</div>
 
-            <h3>
-                Previous Year Papers
-            </h3>
+<div class="feature-card">
 
-            <p>
-                Access CBSE previous year question papers
-                for better exam preparation.
-            </p>
+<h3>🎯 Mock Tests</h3>
 
-            <a href="resources.html">
-                View Papers →
-            </a>
+<p>
+Practice online and gradually improve your
+speed and accuracy.
+</p>
 
-        </div>
+</div>
 
-
-        <div class="feature-card">
-
-            <div class="feature-icon">
-                ✅
-            </div>
-
-            <h3>
-                Solutions
-            </h3>
-
-            <p>
-                Find chapter-wise NCERT solutions and
-                useful practice support.
-            </p>
-
-            <a href="resources.html">
-                Find Solutions →
-            </a>
-
-        </div>
-
-
-        <div class="feature-card">
-
-            <div class="feature-icon">
-                🧪
-            </div>
-
-            <h3>
-                Online Mock Tests
-            </h3>
-
-            <p>
-                Test your preparation and receive
-                instant results.
-            </p>
-
-            <a href="mock-tests.html">
-                Start Test →
-            </a>
-
-        </div>
-
-
-    </div>
+</div>
 
 </section>
 
+<!-- ================= MOCK TEST ================= -->
 
-<!-- ================= MOCK TEST HIGHLIGHT ================= -->
+<section class="section">
 
-<section class="mock-highlight">
+<div class="mock-banner">
 
-    <div>
+<div>
 
-        <h2>
-            🧪 Ready to Test Yourself?
-        </h2>
+<h2>🎯 Test Your Preparation</h2>
 
-        <p>
-            Practice questions, check your score and
-            identify areas where you can improve.
-        </p>
+<p>
 
-    </div>
+Practice with online mock tests and find
+the topics that need more attention.
 
-    <a href="mock-tests.html"
-       class="mock-button">
-        Take a Mock Test →
-    </a>
+</p>
 
-</section>
+</div>
 
+<a href="mock-tests.html"
+class="mock-button">
 
-<!-- ================= WHY PARIDHI TUTORS ================= -->
+Start Mock Test →
 
-<section class="why-section">
+</a>
 
-    <div class="section-heading">
-
-        <span>
-            WHY PARIDHI TUTORS
-        </span>
-
-        <h2>
-            Simple. Useful. Student Friendly.
-        </h2>
-
-        <p>
-            We want to make useful learning resources
-            easier for students to find.
-        </p>
-
-    </div>
-
-
-    <div class="why-grid">
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                🎯
-            </div>
-
-            <h3>
-                Focused Learning
-            </h3>
-
-            <p>
-                Find resources organized according
-                to classes and subjects.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                📖
-            </div>
-
-            <h3>
-                Practice More
-            </h3>
-
-            <p>
-                Use papers, solutions and mock tests
-                to strengthen your preparation.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                🚀
-            </div>
-
-            <h3>
-                Keep Improving
-            </h3>
-
-            <p>
-                Paridhi Tutors will continue to grow
-                with more resources and features.
-            </p>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
-
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about"
-         class="about-section">
+<section class="section section-light"
+         id="about">
 
-    <div class="about-content">
+<div class="section-title">
 
-        <span>
-            ABOUT PARIDHI TUTORS
-        </span>
+<small>ABOUT PARIDHI TUTORS</small>
 
-        <h2>
-            Helping Students Learn With Confidence
-        </h2>
+<h2>Learn • Practice • Improve</h2>
 
-        <p>
-            Paridhi Tutors aims to provide students with
-            easy access to useful educational resources,
-            practice material and online tests.
-        </p>
+<p>
 
-        <p>
-            Our goal is simple — make learning resources
-            easy to find, easy to understand and easy
-            to practise.
-        </p>
+Paridhi Tutors aims to make useful educational
+resources easier for students to find.
 
-    </div>
+Our platform is being developed step by step with
+school resources, competitive-exam preparation,
+practice tests and more.
+
+</p>
+
+</div>
 
 </section>
-
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact"
-         class="contact-section">
+<section class="section"
+         id="contact">
 
-    <div class="section-heading">
+<div class="section-title">
 
-        <span>
-            CONTACT
-        </span>
+<small>CONTACT</small>
 
-        <h2>
-            Get in Touch
-        </h2>
+<h2>Have a Question?</h2>
 
-        <p>
-            Have a question or suggestion?
-            We would love to hear from you.
-        </p>
+<p>
 
-    </div>
+For suggestions, feedback or educational-resource
+requests, contact us.
 
+</p>
 
-    <div class="contact-card">
+<p>
 
-        <div class="contact-icon">
-            📧
-        </div>
+📧
 
-        <h3>
-            Email Us
-        </h3>
+<a href="mailto:paridhitutors@gmail.com">
 
-        <p>
-            For questions, suggestions or feedback.
-        </p>
+[paridhitutors@gmail.com](mailto:paridhitutors@gmail.com)
 
-        <a href="mailto:paridhitutors@gmail.com">
-            paridhitutors@gmail.com
-        </a>
+</a>
 
-    </div>
+</p>
+
+</div>
 
 </section>
-
-
-</main>
-
 
 <!-- ================= FOOTER ================= -->
 
 <footer class="site-footer">
 
-    <div class="footer-content">
+<div class="footer-container">
 
-        <div>
+<div>
 
-            <h3>
-                Paridhi Tutors
-            </h3>
+<h2>Paridhi Tutors</h2>
 
-            <p>
-                Learn • Practice • Succeed
-            </p>
+<p>
+Learn • Practice • Succeed
+</p>
 
-        </div>
+</div>
 
+<div class="footer-links">
 
-        <div class="footer-links">
+<a href="index.html">Home</a>
 
-            <a href="index.html">
-                Home
-            </a>
+<a href="resources.html">School Resources</a>
 
-            <a href="resources.html">
-                Study Resources
-            </a>
+<a href="competitive-exams.html">NEET & JEE</a>
 
-            <a href="mock-tests.html">
-                Mock Tests
-            </a>
+<a href="mock-tests.html">Mock Tests</a>
 
-            <a href="#about">
-                About
-            </a>
+<a href="#about">About</a>
 
-            <a href="#contact">
-                Contact
-            </a>
+<a href="#contact">Contact</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
+<div class="footer-bottom">
 
-    <div class="footer-bottom">
+© 2026 Paridhi Tutors. All Rights Reserved.
 
-        <p>
-            © 2026 Paridhi Tutors. All Rights Reserved.
-        </p>
-
-    </div>
+</div>
 
 </footer>
-
 
 </body>
 

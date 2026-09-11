@@ -759,4 +759,1927 @@ button {
 
 /* =====================================================
    CARD GRID
-   ==================================
+   ===================================================== */
+
+.card-grid {
+
+    max-width: 1150px;
+
+    margin:
+        45px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 22px;
+}
+
+
+.category-card {
+
+    background: white;
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 22px;
+
+    padding: 30px 22px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+
+.category-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(15,23,42,.10);
+}
+
+
+.category-icon {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+
+.category-card h3 {
+
+    margin: 8px 0;
+
+    font-size: 22px;
+}
+
+
+.category-card p {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.card-link {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #4f46e5;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CLASS CARDS
+   ===================================================== */
+
+.class-number {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    border-radius: 18px;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   ALL CLASSES BUTTON
+   ===================================================== */
+
+.all-classes {
+
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+
+.all-classes a {
+
+    display: inline-block;
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   COMPETITIVE EXAMS
+   ===================================================== */
+
+.competitive-section {
+
+    background: #101828;
+
+    color: white;
+}
+
+
+.competitive-section
+.section-title h2 {
+
+    color: white;
+}
+
+
+.competitive-section
+.section-title p {
+
+    color: #cbd5e1;
+}
+
+
+.exam-card {
+
+    background: white;
+
+    color: #172033;
+
+    border-radius: 22px;
+
+    padding: 30px 25px;
+
+    transition: .3s;
+}
+
+
+.exam-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.20);
+}
+
+
+.exam-card h3 {
+
+    font-size: 25px;
+}
+
+
+.exam-card p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+.exam-links {
+
+    display: grid;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.exam-links a {
+
+    background: #f1f5f9;
+
+    padding: 11px 13px;
+
+    border-radius: 10px;
+
+    color: #334155;
+
+    font-weight: 600;
+
+    transition: .2s;
+}
+
+
+.exam-links a:hover {
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+}
+
+
+/* =====================================================
+   FREE MATERIAL
+   ===================================================== */
+
+.free-material {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfeff,
+            #eef2ff
+        );
+}
+
+
+.material-grid {
+
+    max-width: 1050px;
+
+    margin:
+        40px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+
+.material-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid #e2e8f0;
+
+    transition: .3s;
+}
+
+
+.material-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.08);
+}
+
+
+.material-card h3 {
+
+    margin-top: 0;
+}
+
+
+.material-card p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+.material-card a {
+
+    color: #4f46e5;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FEATURES
+   ===================================================== */
+
+.feature-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 27px;
+
+    border:
+        1px solid #e5e7eb;
+}
+
+
+.feature-card h3 {
+
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   MOCK TEST BANNER
+   ===================================================== */
+
+.mock-banner {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #312e81
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.mock-banner h2 {
+
+    font-size: 32px;
+
+    margin-top: 0;
+}
+
+
+.mock-banner p {
+
+    color: #e0e7ff;
+
+    line-height: 1.6;
+}
+
+
+.mock-button {
+
+    background: white;
+
+    color: #312e81;
+
+    padding: 15px 24px;
+
+    border-radius: 12px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-box {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    border:
+        1px solid #e5e7eb;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.06);
+}
+
+
+.contact-box a {
+
+    color: #4f46e5;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.site-footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding:
+        45px 25px 20px;
+}
+
+
+.footer-container {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-container p {
+
+    color: #94a3b8;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.footer-links a {
+
+    color: #cbd5e1;
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+}
+
+
+.footer-bottom {
+
+    max-width: 1150px;
+
+    margin:
+        30px auto 0;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #334155;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+   ===================================================== */
+
+@keyframes sparkleAnimation {
+
+    0% {
+        opacity: 0;
+        transform:
+            scale(.3)
+            rotate(0deg);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: .7;
+        transform:
+            scale(1.4)
+            rotate(45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            scale(.2)
+            rotate(90deg);
+    }
+}
+
+
+@keyframes welcomeZoom {
+
+    0% {
+        opacity: 0;
+        transform: scale(.75);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes logoAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            scale(.5)
+            rotate(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            scale(1)
+            rotate(0);
+    }
+}
+
+
+@keyframes logoGlow {
+
+    from {
+
+        filter:
+            drop-shadow(
+                0 0 8px
+                rgba(255,255,255,.5)
+            )
+            drop-shadow(
+                0 0 20px
+                rgba(99,102,241,.5)
+            );
+    }
+
+    to {
+
+        filter:
+            drop-shadow(
+                0 0 15px
+                rgba(255,255,255,.9)
+            )
+            drop-shadow(
+                0 0 40px
+                rgba(99,102,241,.9)
+            );
+    }
+}
+
+
+@keyframes titleAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes taglineAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes welcomeFadeOut {
+
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media(max-width:900px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .material-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .mock-banner {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media(max-width:600px) {
+
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .brand-text h1 {
+        font-size: 20px;
+    }
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding:
+            55px 18px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .section {
+        padding:
+            55px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .material-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .welcome-logo {
+        width: 95px;
+        height: 95px;
+    }
+
+    .welcome-title {
+        font-size: 42px;
+    }
+
+    .welcome-tagline {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .mock-banner {
+        padding: 30px 22px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     WELCOME SCREEN
+     ===================================================== -->
+
+<div id="welcome-screen">
+
+```
+<!-- SPARKLES -->
+
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+<div class="sparkle"></div>
+
+
+<!-- WELCOME CONTENT -->
+
+<div class="welcome-content">
+
+    <img
+        src="logo.jpg"
+        alt="Paridhi Tutors Logo"
+        class="welcome-logo"
+    >
+
+    <div class="welcome-small">
+        ✦ WELCOME TO ✦
+    </div>
+
+    <h1 class="welcome-title">
+        Paridhi Tutors
+    </h1>
+
+    <div class="welcome-tagline">
+        Learn • Practice • Succeed
+    </div>
+
+    <button
+        class="welcome-button"
+        onclick="enterWebsite()"
+    >
+        Enter Website →
+    </button>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header class="site-header">
+
+<div class="header-container">
+
+<a href="index.html" class="brand">
+
+<img
+src="logo.jpg"
+alt="Paridhi Tutors Logo"
+class="logo"
+
+>
+
+<div class="brand-text">
+
+<h1>Paridhi Tutors</h1>
+
+<p>Learn • Practice • Succeed</p>
+
+</div>
+
+</a>
+
+<nav class="main-nav">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="resources.html">
+School Resources
+</a>
+
+<a href="competitive-exams.html">
+NEET & JEE
+</a>
+
+<a href="mock-tests.html">
+Mock Tests
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div>
+
+<span class="hero-badge">
+🎓 FREE LEARNING RESOURCES
+</span>
+
+<h2>
+
+Learn Better.<br>
+
+Practice More.<br>
+
+<span>Succeed.</span>
+
+</h2>
+
+<p>
+
+Welcome to Paridhi Tutors — a growing educational
+resource platform designed to help students find
+useful study material, previous-year papers,
+solutions and practice resources in one place.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="resources.html"
+class="btn-primary"
+
+>
+
+📚 Explore School Resources
+
+</a>
+
+<a
+href="competitive-exams.html"
+class="btn-secondary"
+
+>
+
+🚀 NEET & JEE Resources
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h3>
+📚 What You Can Find
+</h3>
+
+<div class="hero-card-item">
+📖 NCERT Books — Classes 1–12
+</div>
+
+<div class="hero-card-item">
+📝 CBSE Previous Year Papers
+</div>
+
+<div class="hero-card-item">
+🩺 NEET UG Papers & Resources
+</div>
+
+<div class="hero-card-item">
+⚡ JEE Main & Advanced Papers
+</div>
+
+<div class="hero-card-item">
+✅ Solutions & Answer Keys
+</div>
+
+<div class="hero-card-item">
+🎯 Mock Tests & Practice
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SCHOOL EDUCATION
+     ===================================================== -->
+
+<section class="section section-light">
+
+<div class="section-title">
+
+<small>
+SCHOOL EDUCATION
+</small>
+
+<h2>
+CBSE Resources — Classes 1 to 12
+</h2>
+
+<p>
+
+NCERT books, CBSE question papers, solutions,
+sample papers and other useful resources.
+
+</p>
+
+</div>
+
+<div class="card-grid">
+
+<!-- CLASS 1 -->
+
+<a
+href="class1.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+01
+</div>
+
+<h3>
+Class 1
+</h3>
+
+<p>
+Foundation learning resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 2 -->
+
+<a
+href="class2.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+02
+</div>
+
+<h3>
+Class 2
+</h3>
+
+<p>
+Study resources and practice.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 3 -->
+
+<a
+href="class3.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+03
+</div>
+
+<h3>
+Class 3
+</h3>
+
+<p>
+Learning and practice resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 4 -->
+
+<a
+href="class4.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+04
+</div>
+
+<h3>
+Class 4
+</h3>
+
+<p>
+Study material and practice.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 5 -->
+
+<a
+href="class5.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+05
+</div>
+
+<h3>
+Class 5
+</h3>
+
+<p>
+Learning resources for students.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 6 -->
+
+<a
+href="class6.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+06
+</div>
+
+<h3>
+Class 6
+</h3>
+
+<p>
+NCERT and study resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 7 -->
+
+<a
+href="class7.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+07
+</div>
+
+<h3>
+Class 7
+</h3>
+
+<p>
+Study and practice resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 8 -->
+
+<a
+href="class8.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+08
+</div>
+
+<h3>
+Class 8
+</h3>
+
+<p>
+NCERT and examination preparation.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 9 -->
+
+<a
+href="class9.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+09
+</div>
+
+<h3>
+Class 9
+</h3>
+
+<p>
+Build strong concepts and foundations.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 10 -->
+
+<a
+href="class10.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+10
+</div>
+
+<h3>
+Class 10
+</h3>
+
+<p>
+CBSE Board examination preparation.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 11 -->
+
+<a
+href="class11.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+11
+</div>
+
+<h3>
+Class 11
+</h3>
+
+<p>
+Higher secondary study resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+<!-- CLASS 12 -->
+
+<a
+href="class12.html"
+class="category-card"
+
+>
+
+<div class="class-number">
+12
+</div>
+
+<h3>
+Class 12
+</h3>
+
+<p>
+Board and career preparation resources.
+</p>
+
+<span class="card-link">
+Explore →
+</span>
+
+</a>
+
+</div>
+
+<div class="all-classes">
+
+<a href="resources.html">
+
+📚 View All School Resources →
+
+</a>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     COMPETITIVE EXAMS
+     ===================================================== -->
+
+<section class="section competitive-section"
+         id="competitive">
+
+<div class="section-title">
+
+<small>
+COMPETITIVE EXAMS
+</small>
+
+<h2>
+Prepare for NEET & JEE
+</h2>
+
+<p>
+
+Previous-year papers, answer keys, solutions
+and free study resources.
+
+</p>
+
+</div>
+
+<div class="card-grid">
+
+<!-- NEET -->
+
+<div class="exam-card">
+
+<div class="category-icon">
+🩺
+</div>
+
+<h3>
+NEET UG
+</h3>
+
+<p>
+
+Medical entrance preparation resources,
+previous-year papers and official resources.
+
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#neet">
+
+📝 Previous Year Papers
+
+</a>
+
+<a href="competitive-exams.html#neet">
+
+✅ Answer Keys & Solutions
+
+</a>
+
+<a href="competitive-exams.html#free-neet">
+
+📖 Free Study Material
+
+</a>
+
+</div>
+
+</div>
+
+<!-- JEE MAIN -->
+
+<div class="exam-card">
+
+<div class="category-icon">
+⚡
+</div>
+
+<h3>
+JEE Main
+</h3>
+
+<p>
+
+Engineering entrance preparation resources,
+papers, answer keys and free study material.
+
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#jee-main">
+
+📝 Previous Year Papers
+
+</a>
+
+<a href="competitive-exams.html#jee-main">
+
+✅ Answer Keys & Solutions
+
+</a>
+
+<a href="competitive-exams.html#free-jee">
+
+📖 Free Study Material
+
+</a>
+
+</div>
+
+</div>
+
+<!-- JEE ADVANCED -->
+
+<div class="exam-card">
+
+<div class="category-icon">
+🚀
+</div>
+
+<h3>
+JEE Advanced
+</h3>
+
+<p>
+
+Advanced engineering entrance resources,
+previous papers and official documents.
+
+</p>
+
+<div class="exam-links">
+
+<a href="competitive-exams.html#jee-advanced">
+
+📝 Previous Year Papers
+
+</a>
+
+<a href="competitive-exams.html#jee-advanced">
+
+✅ Answer Keys & Solutions
+
+</a>
+
+<a href="competitive-exams.html#free-jee">
+
+📖 Free Study Material
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FREE STUDY MATERIAL
+     ===================================================== -->
+
+<section class="section free-material">
+
+<div class="section-title">
+
+<small>
+FREE RESOURCES
+</small>
+
+<h2>
+Study Without Paying for Material
+</h2>
+
+<p>
+
+We provide links to legitimate free educational
+resources from official education organisations.
+
+</p>
+
+</div>
+
+<div class="material-grid">
+
+<!-- NCERT -->
+
+<div class="material-card">
+
+<h3>
+📚 NCERT Books
+</h3>
+
+<p>
+
+Official NCERT textbooks for
+Classes 1 to 12.
+
+</p>
+
+<a
+href="https://ncert.nic.in/textbook.php"
+target="_blank"
+rel="noopener"
+
+>
+
+Open NCERT Books →
+
+</a>
+
+</div>
+
+<!-- IIT PAL -->
+
+<div class="material-card">
+
+<h3>
+🎥 IIT-PAL Lectures
+</h3>
+
+<p>
+
+Free educational video lectures from
+NTA for JEE Main and NEET preparation.
+
+</p>
+
+<a
+href="https://nta.ac.in/LecturesContent"
+target="_blank"
+rel="noopener"
+
+>
+
+Watch Free Lectures →
+
+</a>
+
+</div>
+
+<!-- NTA -->
+
+<div class="material-card">
+
+<h3>
+📝 NTA Resources
+</h3>
+
+<p>
+
+Official examination notices,
+documents, answer keys and other resources.
+
+</p>
+
+<a
+href="https://www.nta.ac.in/"
+target="_blank"
+rel="noopener"
+
+>
+
+Visit NTA →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     LEARNING SUPPORT
+     ===================================================== -->
+
+<section class="section section-light">
+
+<div class="section-title">
+
+<small>
+LEARNING SUPPORT
+</small>
+
+<h2>
+Everything in One Place
+</h2>
+
+</div>
+
+<div class="card-grid">
+
+<div class="feature-card">
+
+<h3>
+📖 Study Material
+</h3>
+
+<p>
+
+Find NCERT books and other free educational
+resources for regular study.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+📝 Previous Papers
+</h3>
+
+<p>
+
+Practice previous examination papers to
+understand question patterns.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+✅ Solutions
+</h3>
+
+<p>
+
+Use answer keys and solution resources
+to check your preparation.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+🎯 Mock Tests
+</h3>
+
+<p>
+
+Practice questions online and improve
+speed and accuracy.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOCK TEST
+     ===================================================== -->
+
+<section class="section">
+
+<div class="mock-banner">
+
+<div>
+
+<h2>
+🎯 Test Your Preparation
+</h2>
+
+<p>
+
+Practice with online mock tests and identify
+the topics that need more attention.
+
+</p>
+
+</div>
+
+<a
+href="mock-tests.html"
+class="mock-button"
+
+>
+
+Start Mock Test →
+
+</a>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     ABOUT
+     ===================================================== -->
+
+<section class="section section-light"
+         id="about">
+
+<div class="section-title">
+
+<small>
+ABOUT PARIDHI TUTORS
+</small>
+
+<h2>
+Learn • Practice • Improve
+</h2>
+
+<p>
+
+Paridhi Tutors is being developed as a
+student-friendly educational resource platform.
+
+Our aim is to make useful study material,
+previous-year papers, solutions and practice
+resources easier for students to find.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     CONTACT
+     ===================================================== -->
+
+<section class="section"
+         id="contact">
+
+<div class="contact-box">
+
+<h2>
+📩 Contact Paridhi Tutors
+</h2>
+
+<p>
+
+Have a suggestion, resource request or
+feedback about the website?
+
+</p>
+
+<p>
+
+You can contact us by email.
+
+</p>
+
+<p>
+
+<a href="mailto:YOUR_EMAIL_HERE">
+
+YOUR_EMAIL_HERE
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div>
+
+<h2>
+Paridhi Tutors
+</h2>
+
+<p>
+Learn • Practice • Succeed
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="resources.html">
+School Resources
+</a>
+
+<a href="competitive-exams.html">
+NEET & JEE
+</a>
+
+<a href="mock-tests.html">
+Mock Tests
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Paridhi Tutors. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+function enterWebsite() {
+
+    const welcome =
+        document.getElementById(
+            "welcome-screen"
+        );
+
+    welcome.style.animation =
+        "welcomeFadeOut .7s ease forwards";
+
+}
+
+
+/* Automatically allow the page to become
+   accessible after the welcome animation */
+
+setTimeout(function() {
+
+    const welcome =
+        document.getElementById(
+            "welcome-screen"
+        );
+
+    if (welcome) {
+
+        welcome.style.pointerEvents =
+            "none";
+
+    }
+
+}, 5500);
+
+</script>
+
+</body>
+
+</html>

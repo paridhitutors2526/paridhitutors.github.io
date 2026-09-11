@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEET & JEE Resources | Paridhi Tutors</title>
+
+    <meta name="description"
+          content="Free NEET UG, JEE Main and JEE Advanced previous year question papers, answer keys, study material and video lectures by Paridhi Tutors.">
+
+    <link rel="icon" href="logo.jpg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            background: linear-gradient(135deg, #101c3d, #243b78);
+            color: white;
+            padding: 12px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 21px;
+        }
+
+        .nav-brand img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd54a;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 470px;
+            padding: 75px 7% 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255,255,255,0.14), transparent 25%),
+                radial-gradient(circle at 85% 80%, rgba(255,255,255,0.12), transparent 25%),
+                linear-gradient(135deg, #111f4a, #253d83, #4a2388);
+        }
+
+        .sparkle {
+            position: absolute;
+            color: #ffe45c;
+            font-size: 25px;
+            animation: sparkle 2.5s infinite ease-in-out;
+        }
+
+        .s1 { top: 15%; left: 10%; }
+        .s2 { top: 30%; right: 15%; animation-delay: .6s; }
+        .s3 { bottom: 20%; left: 20%; animation-delay: 1.2s; }
+        .s4 { bottom: 15%; right: 10%; animation-delay: 1.8s; }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: .2;
+                transform: scale(.7) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.3) rotate(25deg);
+            }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background: rgba(255,255,255,.14);
+            border: 1px solid rgba(255,255,255,.3);
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 68px);
+            line-height: 1.05;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #ffd84d;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 720px;
+            margin: auto;
+            opacity: .94;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 13px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: #ffd54a;
+            color: #15234b;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.25);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,.7);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #182754;
+        }
+
+        /* =========================
+           SEARCH
+        ========================= */
+
+        .search-area {
+            max-width: 850px;
+            margin: -28px auto 40px;
+            position: relative;
+            z-index: 5;
+            padding: 0 20px;
+        }
+
+        #searchBox {
+            width: 100%;
+            padding: 18px 22px;
+            border: none;
+            border-radius: 16px;
+            font-size: 16px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.15);
+            outline: none;
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 20px 70px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin: 45px 0 28px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            color: #17275a;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            color: #647087;
+        }
+
+        /* =========================
+           EXAM CARDS
+        ========================= */
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .exam-card {
+            background: white;
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: 0 8px 30px rgba(22,35,65,.09);
+            border: 1px solid #e8ebf3;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exam-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(22,35,65,.16);
+        }
+
+        .exam-card::before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, #ff4b5c, #ffb347);
+        }
+
+        .jee-main::before {
+            background: linear-gradient(90deg, #1769ff, #4e9cff);
+        }
+
+        .jee-advanced::before {
+            background: linear-gradient(90deg, #772ce8, #c05cff);
+        }
+
+        .exam-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .exam-card h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+            color: #182657;
+        }
+
+        .exam-card p {
+            color: #667085;
+            margin-bottom: 20px;
+        }
+
+        .resource-list {
+            list-style: none;
+            margin-bottom: 22px;
+        }
+
+        .resource-list li {
+            margin: 11px 0;
+            padding-left: 26px;
+            position: relative;
+        }
+
+        .resource-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #16a36b;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .small-btn {
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: #eef2ff;
+            color: #213579;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .small-btn:hover {
+            background: #213579;
+            color: white;
+        }
+
+        /* =========================
+           RESOURCE CARDS
+        ========================= */
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #e7eaf2;
+            box-shadow: 0 6px 24px rgba(0,0,0,.07);
+            transition: .3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card .icon {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .resource-card h3 {
+            margin-bottom: 7px;
+            color: #17275a;
+        }
+
+        .resource-card p {
+            font-size: 14px;
+            color: #667085;
+            margin-bottom: 16px;
+        }
+
+        /* =========================
+           VIDEO
+        ========================= */
+
+        .youtube-section {
+            margin-top: 60px;
+            padding: 45px 25px;
+            text-align: center;
+            border-radius: 25px;
+            color: white;
+            background: linear-gradient(135deg, #151b3e, #4c1d75);
+        }
+
+        .youtube-section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .youtube-section p {
+            opacity: .9;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .youtube-btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 14px 25px;
+            border-radius: 12px;
+            background: #ff1744;
+            color: white;
+            text-decoration: none;
+            font-weight: 800;
+            transition: .3s;
+        }
+
+        .youtube-btn:hover {
+            transform: scale(1.05);
+            background: #e0002f;
+        }
+
+        /* =========================
+           OFFICIAL LINKS
+        ========================= */
+
+        .official {
+            margin-top: 55px;
+        }
+
+        .official-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .official-card {
+            background: #fff;
+            padding: 22px;
+            border-radius: 16px;
+            border-left: 5px solid #273c8a;
+            box-shadow: 0 5px 20px rgba(0,0,0,.07);
+        }
+
+        .official-card h3 {
+            color: #1c2d69;
+            margin-bottom: 7px;
+        }
+
+        .official-card p {
+            color: #697386;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .official-card a {
+            color: #3156c8;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #10172d;
+            color: #cfd5e7;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer a {
+            color: #ffd54a;
+            text-decoration: none;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .exam-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resources {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .official-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                padding: 10px 4%;
+            }
+
+            nav .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                min-height: 450px;
+                padding: 55px 20px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .resources {
+                grid-template-columns: 1fr;
+            }
+
+            .exam-card {
+                padding: 23px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .nav-brand {
+                font-size: 17px;
+            }
+
+            .nav-brand img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="nav-brand">
+        <img src="logo.jpg" alt="Paridhi Tutors Logo">
+        <span>Paridhi Tutors</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#exams">NEET & JEE</a>
+        <a href="#resources">Resources</a>
+        <a href="#videos">Videos</a>
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div>
+    <div class="sparkle s4">✧</div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🎓 Free Entrance Exam Resources
+        </div>
+
+        <h1>
+            NEET & <span>JEE</span>
+            Preparation Hub
+        </h1>
+
+        <p>
+            Previous Year Question Papers, Answer Keys, Study Material,
+            Practice Resources and Free Video Lectures — all in one place.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#exams" class="btn btn-primary">
+                🚀 Start Preparing
+            </a>
+
+            <a href="https://www.youtube.com/@paridhitutors2842"
+               target="_blank"
+               class="btn btn-outline">
+                ▶ Watch Free Videos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SEARCH
+========================= -->
+
+<div class="search-area">
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="🔎 Search NEET, JEE Main, JEE Advanced, Papers, Answer Keys..."
+        onkeyup="searchResources()"
+    >
+
+</div>
+
+
+<main class="container">
+
+
+<!-- =========================
+     EXAM SECTION
+========================= -->
+
+<section id="exams">
+
+    <div class="section-heading">
+
+        <h2>🎯 Choose Your Exam</h2>
+
+        <p>
+            Select your examination and start practicing with authentic
+            previous-year resources.
+        </p>
+
+    </div>
+
+
+    <div class="exam-grid">
+
+
+        <!-- NEET -->
+
+        <div class="exam-card searchable">
+
+            <div class="exam-icon">🩺</div>
+
+            <h3>NEET UG</h3>
+
+            <p>
+                Medical entrance preparation resources for
+                NEET UG aspirants.
+            </p>
+
+            <ul class="resource-list">
+
+                <li>Previous Year Question Papers</li>
+                <li>Official Answer Keys</li>
+                <li>NEET Syllabus & Documents</li>
+                <li>Free Study Resources</li>
+                <li>Video Lectures</li>
+
+            </ul>
+
+            <div class="card-buttons">
+
+                <a class="small-btn"
+                   href="https://neet.nta.nic.in/documents/"
+                   target="_blank">
+                    📄 Papers / Documents
+                </a>
+
+                <a class="small-btn"
+                   href="https://neet.nta.nic.in/public-notices/"
+                   target="_blank">
+                    ✅ Answer Keys
+                </a>
+
+                <a class="small-btn"
+                   href="https://neet.nta.nic.in/"
+                   target="_blank">
+                    🔗 Official NTA
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- JEE MAIN -->
+
+        <div class="exam-card jee-main searchable">
+
+            <div class="exam-icon">⚡</div>
+
+            <h3>JEE Main</h3>
+
+            <p>
+                Engineering entrance preparation resources
+                for JEE Main aspirants.
+            </p>
+
+            <ul class="resource-list">
+
+                <li>Previous Year Question Papers</li>
+                <li>Official NTA Answer Keys</li>
+                <li>JEE Main Documents</li>
+                <li>Practice Resources</li>
+                <li>Free Video Lectures</li>
+
+            </ul>
+
+            <div class="card-buttons">
+
+                <a class="small-btn"
+                   href="https://jeemain.nta.nic.in/documents/"
+                   target="_blank">
+                    📄 Papers / Documents
+                </a>
+
+                <a class="small-btn"
+                   href="https://jeemain.nta.nic.in/public-notices/"
+                   target="_blank">
+                    ✅ Answer Keys
+                </a>
+
+                <a class="small-btn"
+                   href="https://jeemain.nta.nic.in/"
+                   target="_blank">
+                    🔗 Official NTA
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- JEE ADVANCED -->
+
+        <div class="exam-card jee-advanced searchable">
+
+            <div class="exam-icon">🚀</div>
+
+            <h3>JEE Advanced</h3>
+
+            <p>
+                Advanced-level resources for students
+                targeting IITs.
+            </p>
+
+            <ul class="resource-list">
+
+                <li>Previous Year Question Papers</li>
+                <li>Official Answer Keys</li>
+                <li>Question Paper Archive</li>
+                <li>IIT Admission Resources</li>
+                <li>Free Preparation Videos</li>
+
+            </ul>
+
+            <div class="card-buttons">
+
+                <a class="small-btn"
+                   href="https://jeeadv.ac.in/archive.html"
+                   target="_blank">
+                    📄 PYQ Archive
+                </a>
+
+                <a class="small-btn"
+                   href="https://jeeadv.ac.in/"
+                   target="_blank">
+                    🔗 Official Website
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FREE RESOURCES
+========================= -->
+
+<section id="resources">
+
+    <div class="section-heading">
+
+        <h2>📚 Free Study Resources</h2>
+
+        <p>
+            Useful resources to strengthen your preparation without
+            spending money.
+        </p>
+
+    </div>
+
+
+    <div class="resources">
+
+
+        <div class="resource-card searchable">
+
+            <div class="icon">📄</div>
+
+            <h3>Previous Year Papers</h3>
+
+            <p>
+                Practice authentic examination questions
+                and understand the real exam pattern.
+            </p>
+
+            <a class="small-btn"
+               href="#exams">
+                Explore Papers
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="icon">✅</div>
+
+            <h3>Answer Keys</h3>
+
+            <p>
+                Check your answers using official answer
+                keys wherever available.
+            </p>
+
+            <a class="small-btn"
+               href="#exams">
+                View Keys
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="icon">📚</div>
+
+            <h3>Study Material</h3>
+
+            <p>
+                Access useful notes, concepts, revision
+                resources and preparation material.
+            </p>
+
+            <a class="small-btn"
+               href="https://swayam.gov.in/"
+               target="_blank">
+                Free Learning
+            </a>
+
+        </div>
+
+
+        <div class="resource-card searchable">
+
+            <div class="icon">📝</div>
+
+            <h3>Practice Tests</h3>
+
+            <p>
+                Regular practice helps improve speed,
+                accuracy and exam confidence.
+            </p>
+
+            <a class="small-btn"
+               href="https://www.nta.ac.in/abhyas"
+               target="_blank">
+                NTA Abhyas
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     YOUTUBE
+========================= -->
+
+<section id="videos" class="youtube-section">
+
+    <h2>🎥 Free Video Lectures</h2>
+
+    <p>
+        Learn concepts, solve questions and prepare for
+        NEET & JEE through Paridhi Tutors' free YouTube lectures.
+    </p>
+
+    <a class="youtube-btn"
+       href="https://www.youtube.com/@paridhitutors2842"
+       target="_blank">
+
+        ▶ Visit Paridhi Tutors on YouTube
+
+    </a>
+
+</section>
+
+
+<!-- =========================
+     OFFICIAL SOURCES
+========================= -->
+
+<section class="official">
+
+    <div class="section-heading">
+
+        <h2>🔗 Official Websites</h2>
+
+        <p>
+            Always verify important examination information
+            from official sources.
+        </p>
+
+    </div>
+
+
+    <div class="official-grid">
+
+
+        <div class="official-card">
+
+            <h3>🩺 NEET UG — NTA</h3>
+
+            <p>
+                Official National Eligibility cum Entrance
+                Test website.
+            </p>
+
+            <a href="https://neet.nta.nic.in/"
+               target="_blank">
+
+                Visit Official Website →
+
+            </a>
+
+        </div>
+
+
+        <div class="official-card">
+
+            <h3>⚡ JEE Main — NTA</h3>
+
+            <p>
+                Official JEE Main website operated by NTA.
+            </p>
+
+            <a href="https://jeemain.nta.nic.in/"
+               target="_blank">
+
+                Visit Official Website →
+
+            </a>
+
+        </div>
+
+
+        <div class="official-card">
+
+            <h3>🚀 JEE Advanced</h3>
+
+            <p>
+                Official website for JEE Advanced and
+                IIT entrance information.
+            </p>
+
+            <a href="https://jeeadv.ac.in/"
+               target="_blank">
+
+                Visit Official Website →
+
+            </a>
+
+        </div>
+
+
+        <div class="official-card">
+
+            <h3>🏛️ National Testing Agency</h3>
+
+            <p>
+                Official NTA portal for national-level
+                entrance examinations.
+            </p>
+
+            <a href="https://www.nta.ac.in/"
+               target="_blank">
+
+                Visit NTA →
+
+            </a>
+
+        </div>
+
+
+        <div class="official-card">
+
+            <h3>🧪 NTA Abhyas</h3>
+
+            <p>
+                Practice-oriented resources from NTA.
+            </p>
+
+            <a href="https://www.nta.ac.in/abhyas"
+               target="_blank">
+
+                Practice Now →
+
+            </a>
+
+        </div>
+
+
+        <div class="official-card">
+
+            <h3>🎓 SWAYAM</h3>
+
+            <p>
+                Government-supported platform offering
+                free online learning resources.
+            </p>
+
+            <a href="https://swayam.gov.in/"
+               target="_blank">
+
+                Explore SWAYAM →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Paridhi Tutors</strong>
+    </p>
+
+    <p>
+        Learn • Practice • Improve • Succeed 🚀
+    </p>
+
+    <p style="margin-top:10px;">
+        <a href="index.html">← Back to Home</a>
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     SEARCH SCRIPT
+========================= -->
+
+<script>
+
+function searchResources() {
+
+    const input =
+        document.getElementById("searchBox")
+        .value
+        .toLowerCase();
+
+    const cards =
+        document.querySelectorAll(".searchable");
+
+    cards.forEach(card => {
+
+        const text =
+            card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+
+            card.style.display = "";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
